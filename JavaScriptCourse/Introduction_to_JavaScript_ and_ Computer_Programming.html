@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Quiz Format 1</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="javaScript/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="score">
+          <p>JavaScript Essentials 1 (JSE): Module 1</p>
+          <p>Section 1: About JavaScript</p>
+           <p>Topics in this section:</p>
+          <ul>
+            <li>How to communicate with the computer?</li>
+              <ul>
+                <li>Introduction</li>
+                <li>How to communicate with the computer</li>
+              </ul>
+            <li>What is JS?</li>
+              <ul>
+                <li>JavaScript as an interpreted language</li>
+              </ul>
+            <li>JS – Advantages and Limitations </li>
+              <ul>
+                <li>A few more words on JavaScript</li>
+                <li>Client-side vs server-side programming</li>
+                <li>Is this the perfect programming language? - disadvantages</li>
+                <li>Is this the perfect programming language? - advantages</li>
+              </ul>
+            <li>Where is JS used today?</li>
+             <ul>
+                <li>Let's get ready to work</li>
+              </ul>
+          </ul>
+          
+            <span id="user-score">0</span>
+            <span id="total-score">/ 3</span>
+        </div>
+        <!----->
+        <div class="content" id="question-area" >
+            <div id="question-text">
+              
+          <p>JavaScript Essentials 1 (JSE): Module 1</p>
+          <p>Section 2 Setting up programming environment</p>
+          <p>Topics in this section:</p>
+          <ul>
+            <li>Development tools</li>
+              <ul>
+                <li>Code editor</li>
+                  <ul>
+                    <li>https://notepad-plus-plus.org/</li>
+                    <li>https://www.sublimetext.com/</li>
+                    <li>https://www.jetbrains.com/webstorm/</li>
+                    <li>https://code.visualstudio.com/</li>
+                  </ul>
+                <li>Interpreter</li>
+                    <ul>
+                      <li>In the case of client-side software, our interpreter will simply be the web browser you already have installed (because how else would you read this course?).</li>
+                      <li>or example, if we want to write a simple server-side application, we will almost certainly choose the node.js environment, which we will have to install directly on our operating system.</li>
+                    
+                   </ul>
+                <li>Debugger</li>
+              </ul>
+            <li>Online development environment</li>
+              <ul>
+                <li>https://jsfiddle.net/</li>
+                <li>https://codepen.io/pen/</li>
+                <li>https://jsbin.com/?html,output</li>
+                <li>https://plnkr.co/</li>
+              </ul>
+            <li>Local development environment (code editor, interpreter, debugger) </li>
+              <ul>
+                <li>package managers – enabling the management of libraries (containing ready-made solutions that we can use in our programs) or components of the development environment (e.g. npm or yarn)</li>
+                <li>task runners and module bundlers – used, in simple terms, to automate the process of software development and merge the resulting code from many files and libraries (e.g. Grunt or Webpack)</li>
+                <li>testing framework – allows for automatic testing of the correctness of our program in search of potential errors (e.g. Mocha, Jasmine, or Jest)</li>
+                <li>security analyzers – as you can guess, used to control the security of our solution (e.g. Snyk, RetireJS, or OWASP Dependency Check)</li>
+              </ul>
+           
+          </ul>
+                <div class="options">
+                    <button class="btn btn-option" id="true">True</button>
+                    <button class="btn btn-option" id="false">False</button>
+                </div>
+            </div>
+        </div>
+        <!----->
+        <div class="controls">
+             <p>JavaScript Essentials 1 (JSE): Module 1</p>
+          <p>Section 3: Hello, World!</p>
+           <p>Topics in this section:</p>
+          <ul>
+            <li>A few words about HTML</li>
+              <ul>
+                <li>The "Hello, World!" Program </li>
+                <li>A few words about HTML</li>
+                <li>Minimal HTML document</li>
+                <li> script tag</li>
+                 <li>... and a little something about CCS</li>
+              </ul>
+            <li>How can you run your JavaScript code?</li>
+              <ul>
+                <li>Okay, maybe we could finally run something...</li>
+        
+              </ul>
+            <li>Executing the code directly in the console </li>
+              
+          </ul>
+          
+            <button class="btn btn-restart" id="restart">Restart</button>
+            <button class="btn btn-prev" id="prev">Prev</button>
+            <button class="btn btn-next" id="next">Next</button>
+            <button class="btn btn-submit" id="submit">Submit</button>
+
+        </div>
+    </div><!--container  class end -->
+</body>
+</html>
