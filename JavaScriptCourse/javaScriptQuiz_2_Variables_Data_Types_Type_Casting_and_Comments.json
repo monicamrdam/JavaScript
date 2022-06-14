@@ -4,7 +4,7 @@
             "__comment": "1",
            "question": "What does shadowing mean? /p>?.",
            "answers":[
-             {"option": "Deleting and rewriting a selected piece of program code.", "answer":""},
+             {"option": "Deleting and rewriting a selected piece of program code.", "answer":"false"},
              {"option": "Declaring a local variable with the same name as the previously declared global variable.", "answer":""},
              {"option": "Declaring a global variable with the same name as a previously declared global variable", "answer":""},
              {"option": "Changing the value of a variable.", "answer":"false"}
@@ -84,10 +84,10 @@
            "__comment": "9",
            "question": "Performing the operation: let x = 100/0; will result in:",
            "answers":[
-             {"option": "https://", "answer":"false"},
-             {"option": "http://.", "answer":"false"},
-             {"option": "file://.", "answer":"true"},
-             {"option": "local:///.", "answer":"false"}
+             {"option": "An infinity value being stored in the variable x. ", "answer":""},
+             {"option": "The value 0 being stored in the variable x.", "answer":""},
+             {"option": "The value NaN being stored in the variable x.", "answer":""},
+             {"option": "An undefined value being stored in the variable x.", "answer":""}
            ]
         },
         { 
@@ -102,12 +102,12 @@
         },
         { 
            "__comment": "11",
-            "question": "In order to chek the number of elements of the array stored in the names variable, we call:",
+            "question": "In order to check the number of elements of the array stored in the names variable, we call:",
            "answers":[
-             {"option": "We do not want to open the page, but only download a file from the remote address and save it on the local machine.", "answer":"false"},
-             {"option": "We want the browser to create an empty page for us with the name we give as a continuation of the string.", "answer":"false"},
-             {"option": "We want to save the page as a local file.", "answer":"false"},
-             {"option": "The rest of the string is the path to the file on our local computer that we want to open in the browser.", "answer":"true"}
+             {"option": "names.count.", "answer":""},
+             {"option": "names.length();.", "answer":"false"},
+             {"option": "length of names;.", "answer":""},
+             {"option": "name.length.", "answer":""}
            ]
         },
         { 
@@ -134,10 +134,10 @@
            "__comment": "14",
            "question": "We perform the operation: let x= 'abcdefg'.slice (2,4). As a result, the value:",
            "answers":[
-             {"option": "<script>", "answer":"true"},
-             {"option": "<js>", "answer":"false"},
-             {"option": "<execute>", "answer":"false"},
-             {"option": "<source>", "answer":"false"}
+             {"option": "'cdef' will be written to the variable x.", "answer":"false"},
+             {"option": "'cd' will be written to the variable x.", "answer":""},
+             {"option": "'ab' will be written to the variable x.", "answer":""},
+             {"option": "'cdefg' will be written to the variable x. " , "answer":""}
            ]
         }
         ,
@@ -145,10 +145,10 @@
            "__comment": "15",
            "question": "Review the following code (note the variable name): let age = 32; age = age + 1; console.log(Age);. As a result of its execution, the following should appear in the console:",
            "answers":[
-             {"option": "<script>", "answer":"true"},
-             {"option": "<js>", "answer":"false"},
-             {"option": "<execute>", "answer":"false"},
-             {"option": "<source>", "answer":"false"}
+             {"option": "32", "answer":""},
+             {"option": "error message: 'Uncaught ReferenceError: Age is not defined.'", "answer":"true"},
+             {"option": "Undefined", "answer":""},
+             {"option": "33", "answer":""}
            ]
         }
         ,
@@ -156,10 +156,10 @@
            "__comment": "16",
            "question": "Performing the operation: let x= 20n + 10; will result in: ",
            "answers":[
-             {"option": "<script>", "answer":"true"},
-             {"option": "<js>", "answer":"false"},
-             {"option": "<execute>", "answer":"false"},
-             {"option": "<source>", "answer":"false"}
+             {"option": "Result in a value of 30n being stored in the variable x.", "answer":""},
+             {"option": "Cause the program to abort due to an error.", "answer":""},
+             {"option": "Result in the string '20n10' being stored in the variable x.", "answer":""},
+             {"option": "Result in a value of 30 being stored in the variable x. ", "answer":""}
            ]
         }
         ,
@@ -167,10 +167,10 @@
            "__comment": "17",
            "question": "Performing the operation: let x = 'Alice' + 10; will result in:",
            "answers":[
-             {"option": "<script>", "answer":"true"},
-             {"option": "<js>", "answer":"false"},
-             {"option": "<execute>", "answer":"false"},
-             {"option": "<source>", "answer":"false"}
+             {"option": "The value 'Alice10' of String type to be stored in the variable x", "answer":"true"},
+             {"option": "The value 15 of Number type to be stored in the variable x", "answer":""},
+             {"option": "The program execution to abort due to an error.", "answer":""},
+             {"option": "The value NaN of Number type to be stored in the variable x.", "answer":""}
            ]
         }
         ,
@@ -189,10 +189,10 @@
            "__comment": "19",
            "question": "If a variable stores the value false, then the variable:",
            "answers":[
-             {"option": "<script>", "answer":"true"},
-             {"option": "<js>", "answer":"false"},
-             {"option": "<execute>", "answer":"false"},
-             {"option": "<source>", "answer":"false"}
+             {"option": "Is of the Math type.", "answer":""},
+             {"option": "Will no longer be used in the program.", "answer":""},
+             {"option": "Is of the Boolean type.", "answer":""},
+             {"option": "Is of the Logical type.", "answer":""}
            ]
         }
         ,
@@ -221,20 +221,20 @@
             "__comment": "22",
             "question": "The msg variable contains a String type value. Information about the number of characters of this string can be obtained using:",
             "answers":[
-              {"option": "<script>", "answer":"true"},
-              {"option": "<js>", "answer":"false"},
-              {"option": "<execute>", "answer":"false"},
-              {"option": "<source>", "answer":"false"}
+              {"option": "msg.length();", "answer":"false"},
+              {"option": "msg.chars;", "answer":""},
+              {"option": "msg.charsAt();", "answer":""},
+              {"option": "msg.length;", "answer":""}
             ]
          },
          { 
             "__comment": "23",
             "question": "We have declared an array of selected month names let summer= ['June', 'July', 'August'];. We want to change the value 'July' stored in the array to the nummber 7: ",
             "answers":[
-              {"option": "<script>", "answer":"true"},
-              {"option": "<js>", "answer":"false"},
-              {"option": "<execute>", "answer":"false"},
-              {"option": "<source>", "answer":"false"}
+              {"option": "sumer[1] = 7;", "answer":"true"},
+              {"option": "We cannot do this (an array can only contain elements of the same type).", "answer":""},
+              {"option": "summer.July = 7;", "answer":""},
+              {"option": "summer[0] = 7;", "answer":""}
             ]
          },
          { 
@@ -251,10 +251,10 @@
             "__comment": "25",
             "question": "Complex (or composite) data types:",
             "answers":[
-              {"option": "<script>", "answer":"true"},
-              {"option": "<js>", "answer":"false"},
-              {"option": "<execute>", "answer":"false"},
-              {"option": "<source>", "answer":"false"}
+              {"option": "Is an alternative name for primitive types.", "answer":""},
+              {"option": "Are not used in JavaScript.", "answer":""},
+              {"option": "May consist of multiple elements, each of which is of a primitive type.", "answer":""},
+              {"option": "May consist of multiple elements, each of which may be of a primitive or composite type. ", "answer":""}
             ]
          },
          { 
@@ -281,20 +281,20 @@
             "__comment": "28",
             "question": "Point out the correct declaration of the height variable:",
             "answers":[
-              {"option": "<script>", "answer":"true"},
-              {"option": "<js>", "answer":"false"},
-              {"option": "<execute>", "answer":"false"},
-              {"option": "<source>", "answer":"false"}
+              {"option": "variable height;", "answer":""},
+              {"option": "let height;", "answer":""},
+              {"option": "height;", "answer":""},
+              {"option": "height is variable;", "answer":""}
             ]
          },
          { 
             "__comment": "29",
             "question": "Analyze the code snippet: let summer = ['June', 'July', 'August']; let index= summer.indexOf('June');. The index variable will have the value:",
             "answers":[
-              {"option": "<script>", "answer":"true"},
-              {"option": "<js>", "answer":"false"},
-              {"option": "<execute>", "answer":"false"},
-              {"option": "<source>", "answer":"false"}
+              {"option": "True", "answer":""},
+              {"option": "0", "answer":""},
+              {"option": "'June'", "answer":""},
+              {"option": "1", "answer":""}
             ]
          }
        
