@@ -5,8 +5,8 @@
            "question": "What does shadowing mean? /p>?.",
            "answers":[
              {"option": "Deleting and rewriting a selected piece of program code.", "answer":"false"},
-             {"option": "Declaring a local variable with the same name as the previously declared global variable.", "answer":""},
-             {"option": "Declaring a global variable with the same name as a previously declared global variable", "answer":""},
+             {"option": "Declaring a local variable with the same name as the previously declared global variable.", "answer":"true"},
+             {"option": "Declaring a global variable with the same name as a previously declared global variable", "answer":"false"},
              {"option": "Changing the value of a variable.", "answer":"false"}
            ]
         },
@@ -34,50 +34,50 @@
            "__comment": "4",
             "question": "By default, JavaScript allows us to write to an undeclared variable (it declares it implicitly for us). If we want the interpreter to reat such a situacion as an error, we have to:",
            "answers":[
-             {"option": "place the 'prevent undeclared variables'; directive at the beginning of the script.", "answer":""},
+             {"option": "place the 'prevent undeclared variables'; directive at the beginning of the script.", "answer":"false"},
              {"option": "place the 'use strict'; directive at the beginning of the script.", "answer":"true"},
-             {"option": "perform all writes to variable sin a block of code delimited by braces.", "answer":""},
-             {"option": "place the 'use strict'; directive before each write we want to protect.", "answer":""}
+             {"option": "perform all writes to variable sin a block of code delimited by braces.", "answer":"false"},
+             {"option": "place the 'use strict'; directive before each write we want to protect.", "answer":"false"}
            ]
         },
         { 
            "__comment": "5",
            "question": "We want to convert the string '1024' to type Number and store the result in variable n. Point out the correct statement:",
            "answers":[
-             {"option": "Creating a runtime environment for the program.", "answer":"false"},
-             {"option": "Verifying the correctness of the program source code(sintax).", "answer":"false"},
-             {"option": "Transforming all program code into target code before execution.", "answer":"true"},
-             {"option": "Transforming the individual commands of the source code into the target form.", "answer":"false"}
+             {"option": "let n = String ('1024');", "answer":"false"},
+             {"option": "let n = '1024' + 0;", "answer":"false"},
+             {"option": "let n = Number ('1024');", "answer":"true"},
+             {"option": "let n = StringToNumber('1024');", "answer":"false"}
            ]
         },
         { 
            "__comment": "6",
            "question": "Analyze the code snippet: /n let name; /n let age; { let height;{let weight; console.log(name);} console.log(name);} We have access to the weight variable: ",
            "answers":[
-             {"option": "Directly in the processor.", "answer":"true"},
-             {"option": "In a server environment using node.js.", "answer":"false"},
-             {"option": "In a web browser.", "answer":"false"},
-             {"option": "On a mobile device.", "answer":"false"}
+             {"option": "Throughout the program.", "answer":""},
+             {"option": "In the part marked 1.", "answer":""},
+             {"option": "In the part marked 2.", "answer":""},
+             {"option": "Nowhere, as we have no access at all (the variables has not been initizlized ).", "answer":"false"}
            ]
         },
         { 
            "__comment": "7",
             "question": "We declare an object called dog, with two fields: age and name: let dog = { age: 5, name: 'Axel'}; . To change the value of the age field to 6, we need to perform:",
            "answers":[
-             {"option": "A new language based on JavaScript which, among other things, introduces static typing.", "answer":"false"},
-             {"option": "An alternative name for JavaScript", "answer":"false"},
-             {"option": "A variant of JavaScript that is compiled rather than interpreted.", "answer":"true"} ,
-             {"option": "The original name for JavaScript, which has been changed over time.", "answer":"false"}
+             {"option": "dog [age] = 6;", "answer":"false"},
+             {"option": "dog {age} = 6;", "answer":"false"},
+             {"option": "dog.age = 6;.", "answer":"true"} ,
+             {"option": "age of dog = 6;.", "answer":"false"}
            ]
         },
         { 
            "__comment": "8" ,
            "question": "We can replace the declaration 1et x = 0x21; with:",
            "answers":[
-             {"option": "A language for describing the structure of a web page.", "answer":"true"},
-             {"option": "One of the data-comprenssion formats.", "answer":"false"},
-             {"option": "A scripting language to support mathematical calculations.", "answer":"false"},
-             {"option": "A network protocol.", "answer":"false"}
+             {"option": "let x = 17;", "answer":""},
+             {"option": "let x = 21;", "answer":"false"},
+             {"option": "let x = '0x21';", "answer":"false"},
+             {"option": "let x =33;", "answer":""}
            ]
         },
         { 
@@ -85,49 +85,49 @@
            "question": "Performing the operation: let x = 100/0; will result in:",
            "answers":[
              {"option": "An infinity value being stored in the variable x. ", "answer":""},
-             {"option": "The value 0 being stored in the variable x.", "answer":""},
+             {"option": "The value 0 being stored in the variable x.", "answer":"false"},
              {"option": "The value NaN being stored in the variable x.", "answer":""},
-             {"option": "An undefined value being stored in the variable x.", "answer":""}
+             {"option": "An undefined value being stored in the variable x.", "answer":"false"}
            ]
         },
         { 
            "__comment": "10",
-           "question": "We have declared an array of animals let animals = ['dog', 'cat', 'hamster');] . Then we ball the method animals.push('canary');. A a result, the animals array will look like this::" ,
+           "question": "We have declared an array of animals let animals = ['dog', 'cat', 'hamster']; . Then we ball the method animals.push('canary');. A a result, the animals array will look like this::" ,
            "answers":[
-             {"option": "console('test');", "answer":"false"},
-             {"option": "log('test');", "answer":"false"},
-             {"option": "console(log, 'test');.", "answer":"false"},
-             {"option": "console.log('test');", "answer":"true"}
+             {"option": "['canary', dog', 'cat', 'hamster'];", "answer":"false"},
+             {"option": "['dog', 'cat', 'hamster'];", "answer":"false"},
+             {"option": "['dog', 'cat', 'hamster', 'canary'];.", "answer":"true"},
+             {"option": "['canary'];", "answer":"false"}
            ]
         },
         { 
            "__comment": "11",
             "question": "In order to check the number of elements of the array stored in the names variable, we call:",
            "answers":[
-             {"option": "names.count.", "answer":""},
+             {"option": "names.count.", "answer":"false"},
              {"option": "names.length();.", "answer":"false"},
-             {"option": "length of names;.", "answer":""},
-             {"option": "name.length.", "answer":""}
+             {"option": "length of names;.", "answer":"false"},
+             {"option": "name.length.", "answer":"true"}
            ]
         },
         { 
            "__comment": "12",
            "question": "Analyze the code snippet: let counter =0; let userName='John'; . After declaring a counter variable, we want to put a short comment with information about what the variable is used for. To do this, we modify the line with the declaration to the form: ",
            "answers":[
-             {"option": "Display on the console information about the progress of http://test.org page loading.", "answer":"false"},
-             {"option": "Cause the page http://test.org to be loadde into the browser.", "answer":"false"},
-             {"option": "Send a log with information about the currently executed script to the indicated address http://test.org", "answer":"false"},
-             {"option": "Display the following message on the console: 'http://test.org'.", "answer":"true"}
+             {"option": "let counter = 0; //user visit counter.", "answer":"true"},
+             {"option": "// let counter = 0; user visit counter.", "answer":"false"},
+             {"option": "let counter = 0; /*user visit counter. ", "answer":"false"},
+             {"option": "let counter = 0; # user visit counter.", "answer":"false"}
            ]
         },
         { 
            "__comment": "13",
-            "question": "We have declared an array let animalts = ['dog', 'cat', 'hambster']; . We want to temporalily comment out the element 'cat'; and to do this, we cam modify the declaration as follows:",
+            "question": "We have declared an array let animalts = ['dog', 'cat', 'hamster']; . We want to temporalily comment out the element 'cat'; and to do this, we cam modify the declaration as follows:",
            "answers":[
-             {"option": "<lmth>", "answer":"false"},
-             {"option": "<html/>", "answer":"false"},
-             {"option": "</html>", "answer":"true"},
-             {"option": "<html>", "answer":"false"}
+             {"option": "let animalts = ['dog', //'cat',// 'hamster'] ", "answer":"false"},
+             {"option": "let animalts = ['dog', 'hambster']", "answer":"false"},
+             {"option": "let animalts = ['dog', #'cat', #'hamster']", "answer":"false"},
+             {"option": "let animalts = ['dog', '/*cat',*/ 'hamster']", "answer":"true"}
            ]
         },
         { 
@@ -135,9 +135,9 @@
            "question": "We perform the operation: let x= 'abcdefg'.slice (2,4). As a result, the value:",
            "answers":[
              {"option": "'cdef' will be written to the variable x.", "answer":"false"},
-             {"option": "'cd' will be written to the variable x.", "answer":""},
-             {"option": "'ab' will be written to the variable x.", "answer":""},
-             {"option": "'cdefg' will be written to the variable x. " , "answer":""}
+             {"option": "'cd' will be written to the variable x.", "answer":"true"},
+             {"option": "'ab' will be written to the variable x.", "answer":"false"},
+             {"option": "'cdefg' will be written to the variable x. " , "answer":"false"}
            ]
         }
         ,
@@ -145,10 +145,10 @@
            "__comment": "15",
            "question": "Review the following code (note the variable name): let age = 32; age = age + 1; console.log(Age);. As a result of its execution, the following should appear in the console:",
            "answers":[
-             {"option": "32", "answer":""},
+             {"option": "32", "answer":"false"},
              {"option": "error message: 'Uncaught ReferenceError: Age is not defined.'", "answer":"true"},
-             {"option": "Undefined", "answer":""},
-             {"option": "33", "answer":""}
+             {"option": "Undefined", "answer":"false"},
+             {"option": "33", "answer":"false"}
            ]
         }
         ,
@@ -158,7 +158,7 @@
            "answers":[
              {"option": "Result in a value of 30n being stored in the variable x.", "answer":""},
              {"option": "Cause the program to abort due to an error.", "answer":""},
-             {"option": "Result in the string '20n10' being stored in the variable x.", "answer":""},
+             {"option": "Result in the string '20n10' being stored in the variable x.", "answer":"false"},
              {"option": "Result in a value of 30 being stored in the variable x. ", "answer":""}
            ]
         }
@@ -168,9 +168,9 @@
            "question": "Performing the operation: let x = 'Alice' + 10; will result in:",
            "answers":[
              {"option": "The value 'Alice10' of String type to be stored in the variable x", "answer":"true"},
-             {"option": "The value 15 of Number type to be stored in the variable x", "answer":""},
-             {"option": "The program execution to abort due to an error.", "answer":""},
-             {"option": "The value NaN of Number type to be stored in the variable x.", "answer":""}
+             {"option": "The value 15 of Number type to be stored in the variable x", "answer":"false"},
+             {"option": "The program execution to abort due to an error.", "answer":"false"},
+             {"option": "The value NaN of Number type to be stored in the variable x.", "answer":"false"}
            ]
         }
         ,
@@ -178,10 +178,10 @@
            "__comment": "18",
            "question": "Analyze the following code: let counter =100; let counter = 200, counter = 300; . As a result of its execution:",
            "answers":[
-             {"option": "<script>", "answer":"true"},
-             {"option": "<js>", "answer":"false"},
-             {"option": "<execute>", "answer":"false"},
-             {"option": "<source>", "answer":"false"}
+             {"option": "The program will be aborted due to an error (redeclaration of a variable).", "answer":""},
+             {"option": "The counter variable will have the value 100.", "answer":""},
+             {"option": "The counter variable will have the value 200.", "answer":""},
+             {"option": "The counter variable will have the value 300.", "answer":"false"}
            ]
         }
         ,
@@ -189,10 +189,10 @@
            "__comment": "19",
            "question": "If a variable stores the value false, then the variable:",
            "answers":[
-             {"option": "Is of the Math type.", "answer":""},
-             {"option": "Will no longer be used in the program.", "answer":""},
-             {"option": "Is of the Boolean type.", "answer":""},
-             {"option": "Is of the Logical type.", "answer":""}
+             {"option": "Is of the Math type.", "answer":"false"},
+             {"option": "Will no longer be used in the program.", "answer":"false"},
+             {"option": "Is of the Boolean type.", "answer":"true"},
+             {"option": "Is of the Logical type.", "answer":"false"}
            ]
         }
         ,
@@ -211,10 +211,10 @@
            "__comment": "21",
            "question": "We want to declare a distance constant and initialize it with the value 120. What should such a declaration look like?",
            "answers":[
-             {"option": "<script>", "answer":"true"},
-             {"option": "<js>", "answer":"false"},
-             {"option": "<execute>", "answer":"false"},
-             {"option": "<source>", "answer":"false"}
+             {"option": "const distance; distance = 120;", "answer":"false"},
+             {"option": "let constant distance = 120;", "answer":"false"},
+             {"option": "cons distance=120;", "answer":"true"},
+             {"option": "let distance; const distance=120;", "answer":"false"}
            ]
         },
         { 
@@ -223,7 +223,7 @@
             "answers":[
               {"option": "msg.length();", "answer":"false"},
               {"option": "msg.chars;", "answer":""},
-              {"option": "msg.charsAt();", "answer":""},
+              {"option": "msg.charsAt();", "answer":"false"},
               {"option": "msg.length;", "answer":""}
             ]
          },
@@ -232,19 +232,19 @@
             "question": "We have declared an array of selected month names let summer= ['June', 'July', 'August'];. We want to change the value 'July' stored in the array to the nummber 7: ",
             "answers":[
               {"option": "sumer[1] = 7;", "answer":"true"},
-              {"option": "We cannot do this (an array can only contain elements of the same type).", "answer":""},
-              {"option": "summer.July = 7;", "answer":""},
-              {"option": "summer[0] = 7;", "answer":""}
+              {"option": "We cannot do this (an array can only contain elements of the same type).", "answer":"false"},
+              {"option": "summer.July = 7;", "answer":"false"},
+              {"option": "summer[0] = 7;", "answer":"false"}
             ]
          },
          { 
             "__comment": "24",
             "question": "We have declared an array of animals let animals = ['dog', 'cat', 'hamster'];. Then we call the method animals. pop(). As a result, the animals arrya will look like this:",
             "answers":[
-              {"option": "<script>", "answer":"true"},
-              {"option": "<js>", "answer":"false"},
-              {"option": "<execute>", "answer":"false"},
-              {"option": "<source>", "answer":"false"}
+              {"option": "['cat', 'hamster']", "answer":"false"},
+              {"option": "['dog', 'cat', 'hamster']", "answer":"false"},
+              {"option": "['hamster']", "answer":"false"},
+              {"option": "['dog', 'cat']", "answer":"true"}
             ]
          },
          { 
@@ -253,7 +253,7 @@
             "answers":[
               {"option": "Is an alternative name for primitive types.", "answer":""},
               {"option": "Are not used in JavaScript.", "answer":""},
-              {"option": "May consist of multiple elements, each of which is of a primitive type.", "answer":""},
+              {"option": "May consist of multiple elements, each of which is of a primitive type.", "answer":"false"},
               {"option": "May consist of multiple elements, each of which may be of a primitive or composite type. ", "answer":""}
             ]
          },
@@ -261,40 +261,40 @@
             "__comment": "26",
             "question": "Analyze the following code: let x = 10/100; console.log(typeof (x);. As a result of its execution:",
             "answers":[
-              {"option": "<script>", "answer":"true"},
-              {"option": "<js>", "answer":"false"},
-              {"option": "<execute>", "answer":"false"},
-              {"option": "<source>", "answer":"false"}
+              {"option": "It will display 'Number' in the console.", "answer":"true"},
+              {"option": "An error will appear because javaScript does not allow operations on fractional numbers.", "answer":"false"},
+              {"option": "It will display 0.1 in the console.", "answer":"false"},
+              {"option": "It will display 'Fraction' in the console.", "answer":"false"}
             ]
          },
          { 
             "__comment": "27",
             "question": "Analyze the following code: let height= 180; {let heigh = 200; height = height + 10;} console.log (height);. As a result of its execution:",
             "answers":[
-              {"option": "<script>", "answer":"true"},
-              {"option": "<js>", "answer":"false"},
-              {"option": "<execute>", "answer":"false"},
-              {"option": "<source>", "answer":"false"}
+              {"option": "The program will be terminated due to an error (re-declaration of the height variable). ", "answer":"false"},
+              {"option": "A value of 200 will be displayed in the console.", "answer":"false"},
+              {"option": "A value of 210 will be displayed in the console.", "answer":"false"},
+              {"option": "A value of 180 will be displayed in the console.", "answer":"true"}
             ]
          },
          { 
             "__comment": "28",
             "question": "Point out the correct declaration of the height variable:",
             "answers":[
-              {"option": "variable height;", "answer":""},
-              {"option": "let height;", "answer":""},
-              {"option": "height;", "answer":""},
-              {"option": "height is variable;", "answer":""}
+              {"option": "variable height;", "answer":"false"},
+              {"option": "let height;", "answer":"true"},
+              {"option": "height;", "answer":"false"},
+              {"option": "height is variable;", "answer":"false"}
             ]
          },
          { 
             "__comment": "29",
             "question": "Analyze the code snippet: let summer = ['June', 'July', 'August']; let index= summer.indexOf('June');. The index variable will have the value:",
             "answers":[
-              {"option": "True", "answer":""},
-              {"option": "0", "answer":""},
-              {"option": "'June'", "answer":""},
-              {"option": "1", "answer":""}
+              {"option": "True", "answer":"false"},
+              {"option": "0", "answer":"true"},
+              {"option": "'June'", "answer":"false"},
+              {"option": "1", "answer":"false"}
             ]
          }
        
