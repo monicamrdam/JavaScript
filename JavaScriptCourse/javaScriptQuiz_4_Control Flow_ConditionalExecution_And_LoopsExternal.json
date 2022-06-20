@@ -2,7 +2,7 @@
     "questions":[
         { 
             "__comment": "1",
-           "question": "The result of the operation false || 'false' will be:",
+           "question": "The condition if (!a) can be replaced by the condition:",
            "answers":[
              {"option": "'false'", "answer":"false"},
              {"option": "true", "answer":"false"},
@@ -12,7 +12,7 @@
         },
         { 
            "__comment": "2",
-            "question": "The string '12' has been written into the str vaariable: (let str ='12;'). Then the operation str =+str is performed. As a result, the variable str wil contain:",
+            "question": "Examine the followin code: for (let a= 4 < 4; a++ {console.log('test'};. How may times will 'test' be displayed in the console as a result of its execution?')",
            "answers":[
              {"option": "'+12'", "answer":"false"},
              {"option": "NaN", "answer":"false"},
@@ -22,7 +22,7 @@
         },
         { 
            "__comment": "3",
-           "question": "The number 2 is stored in the variable n (let n=2;). The command n = n*n*n is then called. This last command can be replaced by:",
+           "question": "The switch statement:",
            "answers":[
              {"option": "n **=3;", "answer":"true"},
              {"option": "n ***= n;", "answer":"false"}, 
@@ -32,7 +32,7 @@
         },
         { 
            "__comment": "4",
-            "question": "Analyze the code snippet: let n = 10; let m = ++n;. Its execution will result in the following values in the variables n and m:",
+            "question": "Which of the following operators is a ternary one?:",
            "answers":[
              {"option": "n:10 m:10", "answer":"false"},
              {"option": "n:10 m:11", "answer":"false"},
@@ -42,7 +42,7 @@
         },
         { 
            "__comment": "5",
-           "question": "The confirm method allows you to create a dialog box. What values does this method return when the user closes the window?:",
+           "question": "Examine the following code: let car = {make : 'Citroen', model: ''DS'}; for (let f in car) console.log (f);. What will appear on the console as a result? :",
            "answers":[
              {"option": "The string entered by the user.", "answer":"false"},
              {"option": "Always true.", "answer":"false"},
@@ -52,7 +52,7 @@
         },
         { 
            "__comment": "6",
-           "question": "The methods window.alert; window.confirm, and window.prompt are methods of the window object. Which of the following is not true? ",
+           "question": "Analyze the code below: if (counter === 10) {console.log('abc');}. How can we write the same condition using the switch statement? ",
            "answers":[
              {"option": "Yo can call window methods, such as winwow.alert, without including the name window, so calling alert ('abc') would be correct .", "answer":"false"},
              {"option": "The window objetc represents the window in which the HTML document containing the JavaScript code currently being executed is open.", "answer":"false"},
@@ -62,7 +62,7 @@
         },
         { 
            "__comment": "7",
-            "question": "The result of the operation !(true && false || true) will be:",
+            "question": ":",
            "answers":[
              {"option": "false;", "answer":"true"},
              {"option": "null;", "answer":"false"},
@@ -139,7 +139,66 @@
              {"option": "x:false y:true z:1", "answer":"true"},
              {"option": "x:true y:false z:1" , "answer":"false"}
            ]
-        }
-        
+        },
+        { 
+           "__comment": "15",
+           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "answers":[
+             {"option": "x:1 y:1 z=1", "answer":"false"},
+             {"option": "x:null y:null z:1", "answer":"false"},
+             {"option": "x:false y:true z:1", "answer":"true"},
+             {"option": "x:true y:false z:1" , "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "16",
+           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "answers":[
+             {"option": "x:1 y:1 z=1", "answer":"false"},
+             {"option": "x:null y:null z:1", "answer":"false"},
+             {"option": "x:false y:true z:1", "answer":"true"},
+             {"option": "x:true y:false z:1" , "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "17",
+           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "answers":[
+             {"option": "x:1 y:1 z=1", "answer":"false"},
+             {"option": "x:null y:null z:1", "answer":"false"},
+             {"option": "x:false y:true z:1", "answer":"true"},
+             {"option": "x:true y:false z:1" , "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "18",
+           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "answers":[
+             {"option": "x:1 y:1 z=1", "answer":"false"},
+             {"option": "x:null y:null z:1", "answer":"false"},
+             {"option": "x:false y:true z:1", "answer":"true"},
+             {"option": "x:true y:false z:1" , "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "19",
+           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "answers":[
+             {"option": "x:1 y:1 z=1", "answer":"false"},
+             {"option": "x:null y:null z:1", "answer":"false"},
+             {"option": "x:false y:true z:1", "answer":"true"},
+             {"option": "x:true y:false z:1" , "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "20",
+           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "answers":[
+             {"option": "x:1 y:1 z=1", "answer":"false"},
+             {"option": "x:null y:null z:1", "answer":"false"},
+             {"option": "x:false y:true z:1", "answer":"true"},
+             {"option": "x:true y:false z:1" , "answer":"false"}
+           ]
+        },
     ]
 }
