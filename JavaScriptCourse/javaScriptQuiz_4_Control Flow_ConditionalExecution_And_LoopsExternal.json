@@ -152,7 +152,7 @@
         },
         { 
            "__comment": "16",
-           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "question": "Review the following code: let x=100; if (x <100) x =20; console.log(x)). What will be displayed in the console as a result of its execution?:",
            "answers":[
              {"option": "x:1 y:1 z=1", "answer":"false"},
              {"option": "x:null y:null z:1", "answer":"false"},
@@ -162,7 +162,7 @@
         },
         { 
            "__comment": "17",
-           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "question": "Review the following code: if (counter <=10){ if(counter >=10){console.log(1)}; . We can replace it using:",
            "answers":[
              {"option": "x:1 y:1 z=1", "answer":"false"},
              {"option": "x:null y:null z:1", "answer":"false"},
@@ -172,7 +172,7 @@
         },
         { 
            "__comment": "18",
-           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "question": "We want to rewrite the following code snippet using the conditional operator: let name; if (test) {name=10; }else {name = 20}};. Which notation is correct?:",
            "answers":[
              {"option": "x:1 y:1 z=1", "answer":"false"},
              {"option": "x:null y:null z:1", "answer":"false"},
@@ -182,7 +182,7 @@
         },
         { 
            "__comment": "19",
-           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "question": "Review the following code snippet: if (counter <=10 && confirm === false) {console.log('test')}. What values can teh counter and confirm variables have so that the console displays 'test' as a result of code execution?:",
            "answers":[
              {"option": "x:1 y:1 z=1", "answer":"false"},
              {"option": "x:null y:null z:1", "answer":"false"},
@@ -192,7 +192,7 @@
         },
         { 
            "__comment": "20",
-           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "question": "Which sequence of if ...else  statemente is incorrect?:",
            "answers":[
              {"option": "x:1 y:1 z=1", "answer":"false"},
              {"option": "x:null y:null z:1", "answer":"false"},
