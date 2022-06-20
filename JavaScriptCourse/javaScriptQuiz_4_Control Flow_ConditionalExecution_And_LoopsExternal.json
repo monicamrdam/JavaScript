@@ -102,7 +102,7 @@
         },
         { 
            "__comment": "11",
-            "question": "Analyze the code snippet  let n = 2 * 3 ** 3 - 1; The result storeed in the variable n is:",
+            "question": "Analyze the following code: let a= 10; do { console.log(a--);} while ( a > 3);. Whitch statement can replace the do ... while form the example above?:",
            "answers":[
              {"option": "215", "answer":"false"},
              {"option": "36", "answer":"false"},
@@ -112,7 +112,7 @@
         },
         { 
            "__comment": "12",
-           "question": "The result of the operation 20 || 5 will be: ",
+           "question": "We store an array of animal names in the animals variable (e.g. let animals = ['dog','cat','hamster', 'rabbit']);). Which of the following statements will display exactly two names from the array ?",
            "answers":[
              {"option": "20", "answer":"true"},
              {"option": "5", "answer":""},
@@ -122,7 +122,7 @@
         },
         { 
            "__comment": "13",
-            "question": "The result of the comparasion 'abcd' > 'Abcd' will be",
+            "question": "The condition if (a >=0) can be replaced by the condition: ",
            "answers":[
              {"option": "'abcd'", "answer":"false"},
              {"option": "1", "answer":"false"},
@@ -132,7 +132,7 @@
         },
         { 
            "__comment": "14",
-           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "question": "Which of the following is not a loop instruction in JavaScript?:",
            "answers":[
              {"option": "x:1 y:1 z=1", "answer":"false"},
              {"option": "x:null y:null z:1", "answer":"false"},
@@ -142,7 +142,7 @@
         },
         { 
            "__comment": "15",
-           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "question": "Examine the following code: for (let a=5; a>1; a--){console.log(a);};. Which statement can replace the for from the example above?:",
            "answers":[
              {"option": "x:1 y:1 z=1", "answer":"false"},
              {"option": "x:null y:null z:1", "answer":"false"},
