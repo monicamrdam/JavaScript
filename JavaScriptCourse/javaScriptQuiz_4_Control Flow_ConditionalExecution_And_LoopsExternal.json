@@ -62,7 +62,7 @@
         },
         { 
            "__comment": "7",
-            "question": ":",
+            "question": "Analyze the following code: for (let x = 10; x > 1; x -=2) console.log('hello');. How many times will 'hello' be displayed in the console as a result of its execution?:",
            "answers":[
              {"option": "false;", "answer":"true"},
              {"option": "null;", "answer":"false"},
@@ -72,7 +72,7 @@
         },
         { 
            "__comment": "8" ,
-           "question": "Which operator do we use if we want to check if two variables store the same values of exactly the same type?:",
+           "question": "Examine the following code: let steps = [3,2,1]; for (let n of steps) console.log (n);. What will appear on the console as a restult?:",
            "answers":[
              {"option": "===", "answer":"true"},
              {"option": "=", "answer":"false"},
@@ -82,7 +82,7 @@
         },
         { 
            "__comment": "9",
-           "question": "Analyze the following code: let text = prompt ('Hello', 'World'); What value will the test variable have if, after running the code, we inmmediately press the OK button onthe newly created dialog?",
+           "question": "If we want to display all the elements of the days arrays in reverse order (starting from the last element) then we can do this using the statement: ",
            "answers":[
              {"option": "true", "answer":"false"},
              {"option": "World", "answer":""},
@@ -92,7 +92,7 @@
         },
         { 
            "__comment": "10",
-           "question": "The result of the operation 3*4 >20-15 will be:" ,
+           "question": "Whitch of the following loop instructions is intended only to loop throught all the keys of the indicated object?.:" ,
            "answers":[
              {"option": "NaN", "answer":"false"},
              {"option": "-14", "answer":"false"},
