@@ -1,1 +1,146 @@
 
+{
+    "questions":[
+        { 
+            "__comment": "1",
+           "question": "The result of the operation false || 'false' will be:",
+           "answers":[
+             {"option": "'false'", "answer":"false"},
+             {"option": "true", "answer":"false"},
+             {"option": "false", "answer":"true"},
+             {"option": "0", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "2",
+            "question": "The string '12' has been written into the str vaariable: (let str ='12;'). Then the operation str =+str is performed. As a result, the variable str wil contain:",
+           "answers":[
+             {"option": "'+12'", "answer":"false"},
+             {"option": "NaN", "answer":"false"},
+             {"option": "'12'", "answer":"false"},
+             {"option": "12", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "3",
+           "question": "The number 2 is stored in the variable n (let n=2;). The command n = n*n*n is then called. This last command can be replaced by:",
+           "answers":[
+             {"option": "n **=3;", "answer":"true"},
+             {"option": "n ***= n;", "answer":"false"}, 
+             {"option": "n *= 3;", "answer":"false"},
+             {"option": "n ** = n;", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "4",
+            "question": "Analyze the code snippet: let n = 10; let m = ++n;. Its execution will result in the following values in the variables n and m:",
+           "answers":[
+             {"option": "n:10 m:10", "answer":"false"},
+             {"option": "n:10 m:11", "answer":"false"},
+             {"option": "n:11 m:10", "answer":"false"},
+             {"option": "n:11 m:11", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "5",
+           "question": "The confirm method allows you to create a dialog box. What values does this method return when the user closes the window?:",
+           "answers":[
+             {"option": "The string entered by the user.", "answer":"false"},
+             {"option": "Always true.", "answer":"false"},
+             {"option": "Always false.", "answer":"false"},
+             {"option": "It depends on the option selected by the user.", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "6",
+           "question": "The methods window.alert; window.confirm, and window.prompt are methods of the window object. Which of the following is not true? ",
+           "answers":[
+             {"option": "Yo can call window methods, such as winwow.alert, without including the name window, so calling alert ('abc') would be correct .", "answer":"false"},
+             {"option": "The window objetc represents the window in which the HTML document containing the JavaScript code currently being executed is open.", "answer":"false"},
+             {"option": "The alert, confirm, and prompt methods display information in modal windows that block access to the page until they are closed.", "answer":"false"},
+             {"option": "The alert, confirm, and prompt metods require an argument specifying the position of the dialog box in which the information will be displayed.", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "7",
+            "question": "The result of the operation !(true && false || true) will be:",
+           "answers":[
+             {"option": "false;", "answer":"true"},
+             {"option": "null;", "answer":"false"},
+             {"option": "1;.", "answer":"false"} ,
+             {"option": "true;.", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "8" ,
+           "question": "Which operator do we use if we want to check if two variables store the same values of exactly the same type?:",
+           "answers":[
+             {"option": "===", "answer":"true"},
+             {"option": "=", "answer":"false"},
+             {"option": "!==", "answer":"false"},
+             {"option": "==", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "9",
+           "question": "Analyze the following code: let text = prompt ('Hello', 'World'); What value will the test variable have if, after running the code, we inmmediately press the OK button onthe newly created dialog?",
+           "answers":[
+             {"option": "true", "answer":"false"},
+             {"option": "World", "answer":""},
+             {"option": "Hello", "answer":"false"},
+             {"option": "OK", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "10",
+           "question": "The result of the operation 3*4 >20-15 will be:" ,
+           "answers":[
+             {"option": "NaN", "answer":"false"},
+             {"option": "-14", "answer":"false"},
+             {"option": "true", "answer":"true"},
+             {"option": "false", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "11",
+            "question": "Analyze the code snippet  let n = 2 * 3 ** 3 - 1; The result storeed in the variable n is:",
+           "answers":[
+             {"option": "215", "answer":"false"},
+             {"option": "36", "answer":"false"},
+             {"option": "53", "answer":"true"},
+             {"option": "18", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "12",
+           "question": "The result of the operation 20 || 5 will be: ",
+           "answers":[
+             {"option": "20", "answer":"true"},
+             {"option": "5", "answer":""},
+             {"option": "true", "answer":"false"},
+             {"option": "25", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "13",
+            "question": "The result of the comparasion 'abcd' > 'Abcd' will be",
+           "answers":[
+             {"option": "'abcd'", "answer":"false"},
+             {"option": "1", "answer":"false"},
+             {"option": "true", "answer":"true"},
+             {"option": "false", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "14",
+           "question": "Analyze the code snippet: let nr = '1'; let x = (nr ===1); let y = (nr ==1); let z = (nr = 1);. Afther its execution, the variables x, y and z will have the values:",
+           "answers":[
+             {"option": "x:1 y:1 z=1", "answer":"false"},
+             {"option": "x:null y:null z:1", "answer":"false"},
+             {"option": "x:false y:true z:1", "answer":"true"},
+             {"option": "x:true y:false z:1" , "answer":"false"}
+           ]
+        }
+        
+    ]
+}
