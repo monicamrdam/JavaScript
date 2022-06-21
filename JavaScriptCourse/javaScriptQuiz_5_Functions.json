@@ -4,7 +4,7 @@
             "__comment": "1",
            "question": "Analyze the following code: let show = function (){console.log (test);} setTimeout (show, 2000);. Its execution will cause.",
            "answers":[
-             {"option": "The console to display 'test' after a 2000 second delay. ", "answer":""},
+             {"option": "The console to display 'test' after a 2000 second delay. ", "answer":"false"},
              {"option": "The console to display 'show' after a 2 second delay.", "answer":""},
              {"option": "The console to diplay 'test' 2000 times. ", "answer":""},
              {"option": "The console to display 'test' after a 2 second delay.", "answer":""}
@@ -15,7 +15,7 @@
             "question": "Analyze the following code: let x=10; function test (){let x =20; console.log(x);}. What will be displayed in the console as a result of its execution?",
            "answers":[
              {"option": "'x'", "answer":""},
-             {"option": "20", "answer":""},
+             {"option": "20", "answer":"false"},
              {"option": "10", "answer":""},
              {"option": "Nothing will show up", "answer":""}
            ]
@@ -24,7 +24,7 @@
            "__comment": "3",
            "question": "Analyze the code below: function test (counter){console.log('test'); if (counter >0) test (--counter); } test (3);. How many times will the word 'test' be displayed in the console?",
            "answers":[
-             {"option": "3", "answer":""},
+             {"option": "3", "answer":"false"},
              {"option": "4", "answer":""}, 
              {"option": "0", "answer":""},
              {"option": "2", "answer":""}
@@ -36,7 +36,7 @@
            "answers":[
              {"option": "let multiply = (m,n) => {console.log(m*n);}", "answer":""},
              {"option": "let multiply = (m,n) => return(m*n)", "answer":""},
-             {"option": "let multiply = (m,n) => {return(m*n);}", "answer":""},
+             {"option": "let multiply = (m,n) => {return(m*n);}", "answer":"true"},
              {"option": "let multiply = (m,n) => m*n", "answer":""}
            ]
         },
@@ -44,7 +44,7 @@
            "__comment": "5",
            "question": "A callback function is a function that:",
            "answers":[
-             {"option": "Is passed to another function as an argument and only called in its code.", "answer":""},
+             {"option": "Is passed to another function as an argument and only called in its code.", "answer":"true"},
              {"option": "Contains a reference to itself in its code.", "answer":""},
              {"option": "Is always executed at fixed intervals.", "answer":""},
              {"option": "Is always called with a certain pre-defined delay.", "answer":""}
@@ -55,7 +55,7 @@
            "question": "We can use the forEach method to pass through the elements of an array. Which of the following code snippets will display all consecutive elements of the animals array in the console? ",
            "answers":[
              {"option": "forEach (animals, a => {console.log(a);})", "answer":""},
-             {"option": "animals.forEach (a => {console.log(a);})", "answer":""},
+             {"option": "animals.forEach (a => {console.log(a);})", "answer":"true"},
              {"option": "animals.forEach (a => a)", "answer":""},
              {"option": "animals.forEach (console.log(animal))", "answer":""}
            ]
@@ -67,7 +67,7 @@
              {"option": "20", "answer":""},
              {"option": "'y'", "answer":""},
              {"option": "Nothing, because the function expects the y variable to be passed and receives x instead.", "answer":""} ,
-             {"option": "10", "answer":""}
+             {"option": "10", "answer":"true"}
            ]
         },
         { 
@@ -75,7 +75,7 @@
            "question": "Review the following code: let x =10; function test (x){console.log (x);} test (20);. What will be displayed in the console as a result of its execution?",
            "answers":[
              {"option": "Nothing will show up.", "answer":""},
-             {"option": "20", "answer":""},
+             {"option": "20", "answer":"true"},
              {"option": "x", "answer":""},
              {"option": "10", "answer":""}
            ]
@@ -84,7 +84,7 @@
            "__comment": "9",
            "question": "The code snippet: function test(){} is: ",
            "answers":[
-             {"option": "The declaration of an empty test function.", "answer":""},
+             {"option": "The declaration of an empty test function.", "answer":"true"},
              {"option": "The call of the test funcion.", "answer":""},
              {"option": "Incorrect, as the code is wrong and does not mean anything.", "answer":""},
              {"option": "The declaration fo the test variable in which the values returned by the completed function will be stored.", "answer":""}
@@ -94,7 +94,7 @@
            "__comment": "10",
            "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
            "answers":[
-             {"option": "let sum = function (a , b) => {return(a + b);};", "answer":""},
+             {"option": "let sum = function (a , b) => {return(a + b);};", "answer":"false"},
              {"option": "let sum = (a , b) => a + b;", "answer":""},
              {"option": "let sum = (a , b) => {a + b;};", "answer":""},
              {"option": "let sum = (a , b) > a + b;", "answer":""}
@@ -105,7 +105,7 @@
             "question": "If the function is to return some calculated value on completion, we use the following keyword to do so:",
            "answers":[
              {"option": "ret;", "answer":""},
-             {"option": "yield;", "answer":""},
+             {"option": "yield;", "answer":"false"},
              {"option": "return;", "answer":""},
              {"option": "function;", "answer":""}
            ]
