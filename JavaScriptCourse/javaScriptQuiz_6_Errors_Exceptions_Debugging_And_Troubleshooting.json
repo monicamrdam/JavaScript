@@ -1,0 +1,145 @@
+{
+    "questions":[
+        { 
+            "__comment": "1",
+           "question": "Analyze the following code: let show = function (){console.log (test);} setTimeout (show, 2000);. Its execution will cause.",
+           "answers":[
+             {"option": "The console to display 'test' after a 2000 second delay. ", "answer":"false"},
+             {"option": "The console to display 'show' after a 2 second delay.", "answer":"false"},
+             {"option": "The console to diplay 'test' 2000 times. ", "answer":"false"},
+             {"option": "The console to display 'test' after a 2 second delay.", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "2",
+            "question": "Analyze the following code: let x=10; function test (){let x =20; console.log(x);}. What will be displayed in the console as a result of its execution?",
+           "answers":[
+             {"option": "'x'", "answer":"false"},
+             {"option": "20", "answer":"false"},
+             {"option": "10", "answer":"false"},
+             {"option": "Nothing will show up", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "3",
+           "question": "Analyze the code below: function test (counter){console.log('test'); if (counter >0) test (--counter); } test (3);. How many times will the word 'test' be displayed in the console?",
+           "answers":[
+             {"option": "3", "answer":"false"},
+             {"option": "4", "answer":"true"}, 
+             {"option": "0", "answer":"false"},
+             {"option": "2", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "4",
+            "question": "We have defined an arrow function: let multiply = (m,n) => m*n;. We will try to write it in a slightly modified form, but without changing what it is supposed to do. Point out the correct definition:",
+           "answers":[
+             {"option": "let multiply = (m,n) => {console.log(m*n);}", "answer":"false"},
+             {"option": "let multiply = (m,n) => return(m*n)", "answer":"false"},
+             {"option": "let multiply = (m,n) => {return(m*n);}", "answer":"true"},
+             {"option": "let multiply = (m,n) => m*n", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "5",
+           "question": "A callback function is a function that:",
+           "answers":[
+             {"option": "Is passed to another function as an argument and only called in its code.", "answer":"true"},
+             {"option": "Contains a reference to itself in its code.", "answer":"false"},
+             {"option": "Is always executed at fixed intervals.", "answer":"false"},
+             {"option": "Is always called with a certain pre-defined delay.", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "6",
+           "question": "We can use the forEach method to pass through the elements of an array. Which of the following code snippets will display all consecutive elements of the animals array in the console? ",
+           "answers":[
+             {"option": "forEach (animals, a => {console.log(a);})", "answer":"false"},
+             {"option": "animals.forEach (a => {console.log(a);})", "answer":"true"},
+             {"option": "animals.forEach (a => a)", "answer":"false"},
+             {"option": "animals.forEach (console.log(animal))", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "7",
+            "question": "Review the following code: let x=10; let y=20;  function test (y) {console.log (y);} test (x);. What will be displayed in the console as a result of its execution?",
+           "answers":[
+             {"option": "20", "answer":"false"},
+             {"option": "'y'", "answer":"false"},
+             {"option": "Nothing, because the function expects the y variable to be passed and receives x instead.", "answer":"false"} ,
+             {"option": "10", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "8" ,
+           "question": "Review the following code: let x =10; function test (x){console.log (x);} test (20);. What will be displayed in the console as a result of its execution?",
+           "answers":[
+             {"option": "Nothing will show up.", "answer":"false"},
+             {"option": "20", "answer":"true"},
+             {"option": "x", "answer":"false"},
+             {"option": "10", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "9",
+           "question": "The code snippet: function test(){} is: ",
+           "answers":[
+             {"option": "The declaration of an empty test function.", "answer":"true"},
+             {"option": "The call of the test funcion.", "answer":"false"},
+             {"option": "Incorrect, as the code is wrong and does not mean anything.", "answer":"false"},
+             {"option": "The declaration fo the test variable in which the values returned by the completed function will be stored.", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "10",
+           "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
+           "answers":[
+             {"option": "let sum = function (a , b) => {return(a + b);};", "answer":"false"},
+             {"option": "let sum = (a , b) => a + b;", "answer":""},
+             {"option": "let sum = (a , b) => {a + b;};", "answer":"false"},
+             {"option": "let sum = (a , b) > a + b;", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "11",
+            "question": "If the function is to return some calculated value on completion, we use the following keyword to do so:",
+           "answers":[
+             {"option": "ret;", "answer":"false"},
+             {"option": "yield;", "answer":"false"},
+             {"option": "return;", "answer":"true"},
+             {"option": "function;", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "12",
+           "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
+           "answers":[
+             {"option": "let sum = function (a , b) => {return(a + b);};", "answer":"false"},
+             {"option": "let sum = (a , b) => a + b;", "answer":""},
+             {"option": "let sum = (a , b) => {a + b;};", "answer":"false"},
+             {"option": "let sum = (a , b) > a + b;", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "13",
+           "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
+           "answers":[
+             {"option": "let sum = function (a , b) => {return(a + b);};", "answer":"false"},
+             {"option": "let sum = (a , b) => a + b;", "answer":""},
+             {"option": "let sum = (a , b) => {a + b;};", "answer":"false"},
+             {"option": "let sum = (a , b) > a + b;", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "14",
+           "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
+           "answers":[
+             {"option": "let sum = function (a , b) => {return(a + b);};", "answer":"false"},
+             {"option": "let sum = (a , b) => a + b;", "answer":""},
+             {"option": "let sum = (a , b) => {a + b;};", "answer":"false"},
+             {"option": "let sum = (a , b) > a + b;", "answer":""}
+           ]
+        }
+        
+    ]
+}
