@@ -4,200 +4,200 @@
             "__comment": "1",
            "question": "The condition if (!a) can be replaced by the condition:",
            "answers":[
-             {"option": "'false'", "answer":"false"},
-             {"option": "true", "answer":"false"},
-             {"option": "false", "answer":"true"},
-             {"option": "0", "answer":"false"}
+             {"option": "'if(a===false);'", "answer":"false"},
+             {"option": "if(a);", "answer":"false"},
+             {"option": "if(!!a);", "answer":"false"},
+             {"option": "if (a == false);", "answer":"true"}
            ]
         },
         { 
            "__comment": "2",
-            "question": "Examine the followin code: for (let a= 4 < 4; a++ {console.log('test'};. How may times will 'test' be displayed in the console as a result of its execution?')",
+            "question": "Examine the following code: for (let a= 4 < 4; a++ {console.log('test'};. How may times will 'test' be displayed in the console as a result of its execution?')",
            "answers":[
-             {"option": "'+12'", "answer":"false"},
-             {"option": "NaN", "answer":"false"},
-             {"option": "'12'", "answer":"false"},
-             {"option": "12", "answer":"true"}
+             {"option": "4", "answer":"false"},
+             {"option": "3", "answer":"false"},
+             {"option": "it will not be displayed at all", "answer":"true"},
+             {"option": "1", "answer":"false"}
            ]
         },
         { 
            "__comment": "3",
            "question": "The switch statement:",
            "answers":[
-             {"option": "n **=3;", "answer":"true"},
-             {"option": "n ***= n;", "answer":"false"}, 
-             {"option": "n *= 3;", "answer":"false"},
-             {"option": "n ** = n;", "answer":"false"}
+             {"option": "Is a conditional statement that works identically to the if statement ;", "answer":"true"},
+             {"option": "Allows you to change the progam mode to debug mode;", "answer":"false"}, 
+             {"option": "Is not present in the JavaScript Language", "answer":"false"},
+             {"option": "Is a conditional statement that allows different actions to be taken depending on the value stored in the indicated variable.", "answer":"false"}
            ]
         },
         { 
            "__comment": "4",
             "question": "Which of the following operators is a ternary one?:",
            "answers":[
-             {"option": "n:10 m:10", "answer":"false"},
-             {"option": "n:10 m:11", "answer":"false"},
-             {"option": "n:11 m:10", "answer":"false"},
-             {"option": "n:11 m:11", "answer":"true"}
+             {"option": "A conditional operator ?:", "answer":"true"},
+             {"option": "A typeof operator", "answer":"false"},
+             {"option": "An assignment operator =", "answer":"false"},
+             {"option": "An increment operator ++", "answer":"false"}
            ]
         },
         { 
            "__comment": "5",
            "question": "Examine the following code: let car = {make : 'Citroen', model: ''DS'}; for (let f in car) console.log (f);. What will appear on the console as a result? :",
            "answers":[
-             {"option": "The string entered by the user.", "answer":"false"},
-             {"option": "Always true.", "answer":"false"},
-             {"option": "Always false.", "answer":"false"},
-             {"option": "It depends on the option selected by the user.", "answer":"true"}
+             {"option": "'car'.", "answer":""},
+             {"option": "'make: Citroen' 'model: DS'.", "answer":"false"},
+             {"option": "'Citroen' 'DS'.", "answer":"false"},
+             {"option": "'make' 'model'.", "answer":""}
            ]
         },
         { 
            "__comment": "6",
            "question": "Analyze the code below: if (counter === 10) {console.log('abc');}. How can we write the same condition using the switch statement? ",
            "answers":[
-             {"option": "Yo can call window methods, such as winwow.alert, without including the name window, so calling alert ('abc') would be correct .", "answer":"false"},
-             {"option": "The window objetc represents the window in which the HTML document containing the JavaScript code currently being executed is open.", "answer":"false"},
-             {"option": "The alert, confirm, and prompt methods display information in modal windows that block access to the page until they are closed.", "answer":"false"},
-             {"option": "The alert, confirm, and prompt metods require an argument specifying the position of the dialog box in which the information will be displayed.", "answer":"true"}
+             {"option": "case (counter) {switch 10: console.log('abc')};", "answer":"false"},
+             {"option": "switch (counter) {case 10: console.log('abc')};", "answer":"true"},
+             {"option": "swtich (counter) {case ? 10: console.log('abc')};", "answer":"false"},
+             {"option": "swtich (counter) case 10: console.log('abc');", "answer":"false"}
            ]
         },
         { 
            "__comment": "7",
             "question": "Analyze the following code: for (let x = 10; x > 1; x -=2) console.log('hello');. How many times will 'hello' be displayed in the console as a result of its execution?:",
            "answers":[
-             {"option": "false;", "answer":"true"},
-             {"option": "null;", "answer":"false"},
-             {"option": "1;.", "answer":"false"} ,
-             {"option": "true;.", "answer":"false"}
+             {"option": "4", "answer":"false"},
+             {"option": "5", "answer":"true"},
+             {"option": "10.", "answer":"false"} ,
+             {"option": "9.", "answer":"false"}
            ]
         },
         { 
            "__comment": "8" ,
            "question": "Examine the following code: let steps = [3,2,1]; for (let n of steps) console.log (n);. What will appear on the console as a restult?:",
            "answers":[
-             {"option": "===", "answer":"true"},
-             {"option": "=", "answer":"false"},
-             {"option": "!==", "answer":"false"},
-             {"option": "==", "answer":"false"}
+             {"option": "123", "answer":"false"},
+             {"option": "'[3,2,1]'", "answer":"false"},
+             {"option": "0 1 2", "answer":"false"},
+             {"option": "3 2 1", "answer":"true"}
            ]
         },
         { 
            "__comment": "9",
            "question": "If we want to display all the elements of the days arrays in reverse order (starting from the last element) then we can do this using the statement: ",
            "answers":[
-             {"option": "true", "answer":"false"},
-             {"option": "World", "answer":""},
-             {"option": "Hello", "answer":"false"},
-             {"option": "OK", "answer":"false"}
+             {"option": "for(let i = days.length; i > 0;i--)console.log(i);", "answer":""},
+             {"option": "for(let i = days.length; i > 0;i--)console.log(days[i]);", "answer":""},
+             {"option": "for(let i = days.length -1; i > 0;i--)console.log(days[i]);", "answer":"false"},
+             {"option": "for(let i = days.length - 1; i >= 0;i--)console.log(days[i]);", "answer":""}
            ]
         },
         { 
            "__comment": "10",
            "question": "Whitch of the following loop instructions is intended only to loop throught all the keys of the indicated object?.:" ,
            "answers":[
-             {"option": "NaN", "answer":"false"},
-             {"option": "-14", "answer":"false"},
-             {"option": "true", "answer":"true"},
-             {"option": "false", "answer":"false"}
+             {"option": "for...of", "answer":"false"},
+             {"option": "do...while", "answer":""},
+             {"option": "if...else", "answer":""},
+             {"option": "for...in", "answer":"false"}
            ]
         },
         { 
            "__comment": "11",
             "question": "Analyze the following code: let a= 10; do { console.log(a--);} while ( a > 3);. Whitch statement can replace the do ... while form the example above?:",
            "answers":[
-             {"option": "215", "answer":"false"},
-             {"option": "36", "answer":"false"},
-             {"option": "53", "answer":"true"},
-             {"option": "18", "answer":"false"}
+             {"option": "while (a>3) console.log(a--);", "answer":"true"},
+             {"option": "while (a>4) console.log(--a);", "answer":"false"},
+             {"option": "while (a>2) console.log(--a);", "answer":"false"},
+             {"option": "while (a>=3) console.log(a--);", "answer":"false"}
            ]
         },
         { 
            "__comment": "12",
            "question": "We store an array of animal names in the animals variable (e.g. let animals = ['dog','cat','hamster', 'rabbit']);). Which of the following statements will display exactly two names from the array ?",
            "answers":[
-             {"option": "20", "answer":"true"},
-             {"option": "5", "answer":""},
-             {"option": "true", "answer":"false"},
-             {"option": "25", "answer":"false"}
+             {"option": "for (let i=0; i<animals.length; i+=2) console.log(animals[i]);", "answer":"true"},
+             {"option": "for (let i=3; i<animals.length; i++) console.log(animals[i]);", "answer":"false"},
+             {"option": "for (let n of animals) console.log(n);", "answer":""},
+             {"option": "for (let n in animals) console.log(n);", "answer":""}
            ]
         },
         { 
            "__comment": "13",
             "question": "The condition if (a >=0) can be replaced by the condition: ",
            "answers":[
-             {"option": "'abcd'", "answer":"false"},
-             {"option": "1", "answer":"false"},
-             {"option": "true", "answer":"true"},
-             {"option": "false", "answer":"false"}
+             {"option": "if(!(a>0 && a==0));", "answer":""},
+             {"option": "if (a>0 || a==0);", "answer":"true"},
+             {"option": "if(0<a);", "answer":""},
+             {"option": "if (a>0 && a==0);", "answer":""}
            ]
         },
         { 
            "__comment": "14",
            "question": "Which of the following is not a loop instruction in JavaScript?:",
            "answers":[
-             {"option": "x:1 y:1 z=1", "answer":"false"},
-             {"option": "x:null y:null z:1", "answer":"false"},
-             {"option": "x:false y:true z:1", "answer":"true"},
-             {"option": "x:true y:false z:1" , "answer":"false"}
+             {"option": "for...of", "answer":"false"},
+             {"option": "if...else", "answer":"true"},
+             {"option": "do...while", "answer":"false"},
+             {"option": "for...in" , "answer":"false"}
            ]
         },
         { 
            "__comment": "15",
            "question": "Examine the following code: for (let a=5; a>1; a--){console.log(a);};. Which statement can replace the for from the example above?:",
            "answers":[
-             {"option": "x:1 y:1 z=1", "answer":"false"},
-             {"option": "x:null y:null z:1", "answer":"false"},
-             {"option": "x:false y:true z:1", "answer":"true"},
-             {"option": "x:true y:false z:1" , "answer":"false"}
+             {"option": "let a=5; while (a>1) console.log(a++);", "answer":"false"},
+             {"option": "let a=6; while (a>=1) console.log(a--);", "answer":"false"},
+             {"option": "let a=5; while (a>1) console.log(a--);", "answer":"true"},
+             {"option": "let a=1; while (a<5) console.log(a++);" , "answer":"false"}
            ]
         },
         { 
            "__comment": "16",
            "question": "Review the following code: let x=100; if (x <100) x =20; console.log(x)). What will be displayed in the console as a result of its execution?:",
            "answers":[
-             {"option": "x:1 y:1 z=1", "answer":"false"},
-             {"option": "x:null y:null z:1", "answer":"false"},
-             {"option": "x:false y:true z:1", "answer":"true"},
-             {"option": "x:true y:false z:1" , "answer":"false"}
+             {"option": "20", "answer":"false"},
+             {"option": "false", "answer":"false"},
+             {"option": "nothing", "answer":"false"},
+             {"option": "100" , "answer":"true"}
            ]
         },
         { 
            "__comment": "17",
            "question": "Review the following code: if (counter <=10){ if(counter >=10){console.log(1)}; . We can replace it using:",
            "answers":[
-             {"option": "x:1 y:1 z=1", "answer":"false"},
-             {"option": "x:null y:null z:1", "answer":"false"},
-             {"option": "x:false y:true z:1", "answer":"true"},
-             {"option": "x:true y:false z:1" , "answer":"false"}
+             {"option": "if (false) console.log(1);", "answer":"false"},
+             {"option": "if (counter == 10) console.log(1);", "answer":"true"},
+             {"option": "if (counter >=10) console.log(1);", "answer":"false"},
+             {"option": "if (true) console.log(1);" , "answer":"false"}
            ]
         },
         { 
            "__comment": "18",
            "question": "We want to rewrite the following code snippet using the conditional operator: let name; if (test) {name=10; }else {name = 20}};. Which notation is correct?:",
            "answers":[
-             {"option": "x:1 y:1 z=1", "answer":"false"},
-             {"option": "x:null y:null z:1", "answer":"false"},
-             {"option": "x:false y:true z:1", "answer":"true"},
-             {"option": "x:true y:false z:1" , "answer":"false"}
+             {"option": "let name = (test) ('Alice')('Bob');", "answer":"false"},
+             {"option": "let name = test ? 'Alice': 'Bob';", "answer":"true"},
+             {"option": "let name = test: 'Alice'? 'Bob';", "answer":"false"},
+             {"option": "let name = iftest?'Alice': 'Bob';" , "answer":"false"}
            ]
         },
         { 
            "__comment": "19",
            "question": "Review the following code snippet: if (counter <=10 && confirm === false) {console.log('test')}. What values can teh counter and confirm variables have so that the console displays 'test' as a result of code execution?:",
            "answers":[
-             {"option": "x:1 y:1 z=1", "answer":"false"},
-             {"option": "x:null y:null z:1", "answer":"false"},
-             {"option": "x:false y:true z:1", "answer":"true"},
-             {"option": "x:true y:false z:1" , "answer":"false"}
+             {"option": "counter:9, show:true", "answer":""},
+             {"option": "counter:11, show:false", "answer":""},
+             {"option": "counter:10, show:false", "answer":"true"},
+             {"option": "counter:10, show:true" , "answer":""}
            ]
         },
         { 
            "__comment": "20",
-           "question": "Which sequence of if ...else  statemente is incorrect?:",
+           "question": "Which sequence of if ...else  statements is incorrect?:",
            "answers":[
-             {"option": "x:1 y:1 z=1", "answer":"false"},
-             {"option": "x:null y:null z:1", "answer":"false"},
-             {"option": "x:false y:true z:1", "answer":"true"},
-             {"option": "x:true y:false z:1" , "answer":"false"}
+             {"option": "if...else if...else if... ", "answer":""},
+             {"option": "if...else...else if...", "answer":"true"},
+             {"option": "if... else if...", "answer":""},
+             {"option": "if...else..." , "answer":""}
            ]
         },
     ]
