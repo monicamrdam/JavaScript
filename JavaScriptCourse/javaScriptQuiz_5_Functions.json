@@ -4,201 +4,112 @@
             "__comment": "1",
            "question": "Analyze the following code: let show = function (){console.log (test);} setTimeout (show, 2000);. Its execution will cause.",
            "answers":[
-             {"option": "The ", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "The console to display 'test' after a 2000 second delay. ", "answer":""},
+             {"option": "The console to display 'show' after a 2 second delay.", "answer":""},
+             {"option": "The console to diplay 'test' 2000 times. ", "answer":""},
+             {"option": "The console to display 'test' after a 2 second delay.", "answer":""}
            ]
         },
         { 
            "__comment": "2",
             "question": "Analyze the following code: let x=10; function test (){let x =20; console.log(x);}. What will be displayed in the console as a result of its execution?",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "'x'", "answer":""},
+             {"option": "20", "answer":""},
+             {"option": "10", "answer":""},
+             {"option": "Nothing will show up", "answer":""}
            ]
         },
         { 
            "__comment": "3",
            "question": "Analyze the code below: function test (counter){console.log('test'); if (counter >0) test (--counter); } test (3);. How many times will the word 'test' be displayed in the console?",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}, 
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "3", "answer":""},
+             {"option": "4", "answer":""}, 
+             {"option": "0", "answer":""},
+             {"option": "2", "answer":""}
            ]
         },
         { 
            "__comment": "4",
             "question": "We have defined an arrow function: let multiply = (m,n) => m*n;. We will try to write it in a slightly modified form, but without changing what it is supposed to do. Point out the correct definition:",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "let multiply = (m,n) => {console.log(m*n);}", "answer":""},
+             {"option": "let multiply = (m,n) => return(m*n)", "answer":""},
+             {"option": "let multiply = (m,n) => {return(m*n);}", "answer":""},
+             {"option": "let multiply = (m,n) => m*n", "answer":""}
            ]
         },
         { 
            "__comment": "5",
            "question": "A callback function is a function that:",
            "answers":[
-             {"option": "", ""},
-             {"option": "", ""},
-             {"option": "", ""},
-             {"option": "", ""}
+             {"option": "Is passed to another function as an argument and only called in its code.", "answer":""},
+             {"option": "Contains a reference to itself in its code.", "answer":""},
+             {"option": "Is always executed at fixed intervals.", "answer":""},
+             {"option": "Is always called with a certain pre-defined delay.", "answer":""}
            ]
         },
         { 
            "__comment": "6",
            "question": "We can use the forEach method to pass through the elements of an array. Which of the following code snippets will display all consecutive elements of the animals array in the console? ",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "forEach (animals, a => {console.log(a);})", "answer":""},
+             {"option": "animals.forEach (a => {console.log(a);})", "answer":""},
+             {"option": "animals.forEach (a => a)", "answer":""},
+             {"option": "animals.forEach (console.log(animal))", "answer":""}
            ]
         },
         { 
            "__comment": "7",
             "question": "Review the following code: let x=10; let y=20;  function test (y) {console.log (y);} test (x);. What will be displayed in the console as a result of its execution?",
            "answers":[
-             {"option": "4", "answer":"false"},
-             {"option": "5", "answer":"true"},
-             {"option": "10.", "answer":"false"} ,
-             {"option": "9.", "answer":"false"}
+             {"option": "20", "answer":""},
+             {"option": "'y'", "answer":""},
+             {"option": "Nothing, because the function expects the y variable to be passed and receives x instead.", "answer":""} ,
+             {"option": "10", "answer":""}
            ]
         },
         { 
            "__comment": "8" ,
            "question": "Review the following code: let x =10; function test (x){console.log (x);} test (20);. What will be displayed in the console as a result of its execution?",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "Nothing will show up.", "answer":""},
+             {"option": "20", "answer":""},
+             {"option": "x", "answer":""},
+             {"option": "10", "answer":""}
            ]
         },
         { 
            "__comment": "9",
            "question": "The code snippet: function test(){} is: ",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "The declaration of an empty test function.", "answer":""},
+             {"option": "The call of the test funcion.", "answer":""},
+             {"option": "Incorrect, as the code is wrong and does not mean anything.", "answer":""},
+             {"option": "The declaration fo the test variable in which the values returned by the completed function will be stored.", "answer":""}
            ]
         },
         { 
            "__comment": "10",
            "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "let sum = function (a , b) => {return(a + b);};", "answer":""},
+             {"option": "let sum = (a , b) => a + b;", "answer":""},
+             {"option": "let sum = (a , b) => {a + b;};", "answer":""},
+             {"option": "let sum = (a , b) > a + b;", "answer":""}
            ]
         },
         { 
            "__comment": "11",
             "question": "If the function is to return some calculated value on completion, we use the following keyword to do so:",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "ret;", "answer":""},
+             {"option": "yield;", "answer":""},
+             {"option": "return;", "answer":""},
+             {"option": "function;", "answer":""}
            ]
-        },
-        { 
-           "__comment": "12",
-           "question": "We store an array of animal names in the animals variable (e.g. let animals = ['dog','cat','hamster', 'rabbit']);). Which of the following statements will display exactly two names from the array ?",
-           "answers":[
-             {"option": "for (let i=0; i<animals.length; i+=2) console.log(animals[i]);", "answer":"true"},
-             {"option": "for (let i=3; i<animals.length; i++) console.log(animals[i]);", "answer":"false"},
-             {"option": "for (let n of animals) console.log(n);", "answer":""},
-             {"option": "for (let n in animals) console.log(n);", "answer":""}
-           ]
-        },
-        { 
-           "__comment": "13",
-            "question": "The condition if (a >=0) can be replaced by the condition: ",
-           "answers":[
-             {"option": "if(!(a>0 && a==0));", "answer":""},
-             {"option": "if (a>0 || a==0);", "answer":"true"},
-             {"option": "if(0<a);", "answer":""},
-             {"option": "if (a>0 && a==0);", "answer":""}
-           ]
-        },
-        { 
-           "__comment": "14",
-           "question": "Which of the following is not a loop instruction in JavaScript?:",
-           "answers":[
-             {"option": "for...of", "answer":"false"},
-             {"option": "if...else", "answer":"true"},
-             {"option": "do...while", "answer":"false"},
-             {"option": "for...in" , "answer":"false"}
-           ]
-        },
-        { 
-           "__comment": "15",
-           "question": "Examine the following code: for (let a=5; a>1; a--){console.log(a);};. Which statement can replace the for from the example above?:",
-           "answers":[
-             {"option": "let a=5; while (a>1) console.log(a++);", "answer":"false"},
-             {"option": "let a=6; while (a>=1) console.log(a--);", "answer":"false"},
-             {"option": "let a=5; while (a>1) console.log(a--);", "answer":"true"},
-             {"option": "let a=1; while (a<5) console.log(a++);" , "answer":"false"}
-           ]
-        },
-        { 
-           "__comment": "16",
-           "question": "Review the following code: let x=100; if (x <100) x =20; console.log(x)). What will be displayed in the console as a result of its execution?:",
-           "answers":[
-             {"option": "20", "answer":"false"},
-             {"option": "false", "answer":"false"},
-             {"option": "nothing", "answer":"false"},
-             {"option": "100" , "answer":"true"}
-           ]
-        },
-        { 
-           "__comment": "17",
-           "question": "Review the following code: if (counter <=10){ if(counter >=10){console.log(1)}; . We can replace it using:",
-           "answers":[
-             {"option": "if (false) console.log(1);", "answer":"false"},
-             {"option": "if (counter == 10) console.log(1);", "answer":"true"},
-             {"option": "if (counter >=10) console.log(1);", "answer":"false"},
-             {"option": "if (true) console.log(1);" , "answer":"false"}
-           ]
-        },
-        { 
-           "__comment": "18",
-           "question": "We want to rewrite the following code snippet using the conditional operator: let name; if (test) {name=10; }else {name = 20}};. Which notation is correct?:",
-           "answers":[
-             {"option": "let name = (test) ('Alice')('Bob');", "answer":"false"},
-             {"option": "let name = test ? 'Alice': 'Bob';", "answer":"true"},
-             {"option": "let name = test: 'Alice'? 'Bob';", "answer":"false"},
-             {"option": "let name = iftest?'Alice': 'Bob';" , "answer":"false"}
-           ]
-        },
-        { 
-           "__comment": "19",
-           "question": "Review the following code snippet: if (counter <=10 && confirm === false) {console.log('test')}. What values can teh counter and confirm variables have so that the console displays 'test' as a result of code execution?:",
-           "answers":[
-             {"option": "counter:9, show:true", "answer":""},
-             {"option": "counter:11, show:false", "answer":""},
-             {"option": "counter:10, show:false", "answer":"true"},
-             {"option": "counter:10, show:true" , "answer":""}
-           ]
-        },
-        { 
-           "__comment": "20",
-           "question": "Which sequence of if ...else  statements is incorrect?:",
-           "answers":[
-             {"option": "if...else if...else if... ", "answer":""},
-             {"option": "if...else...else if...", "answer":"true"},
-             {"option": "if... else if...", "answer":""},
-             {"option": "if...else..." , "answer":""}
-           ]
-        },
+        }
+        
     ]
 }
