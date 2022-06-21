@@ -2,72 +2,72 @@
     "questions":[
         { 
             "__comment": "1",
-           "question": "Analyze the following code: let show = function (){console.log (test);} setTimeout (show, 2000);. Its execution will cause.",
+           "question": "Which of the following is a syntax error?",
            "answers":[
-             {"option": "The console to display 'test' after a 2000 second delay. ", "answer":"false"},
-             {"option": "The console to display 'show' after a 2 second delay.", "answer":"false"},
-             {"option": "The console to diplay 'test' 2000 times. ", "answer":"false"},
-             {"option": "The console to display 'test' after a 2 second delay.", "answer":"true"}
+             {"option": ".", "answer":""},
+             {"option": ".", "answer":""},
+             {"option": ".", "answer":""},
+             {"option": ".", "answer":""}
            ]
         },
         { 
            "__comment": "2",
-            "question": "Analyze the following code: let x=10; function test (){let x =20; console.log(x);}. What will be displayed in the console as a result of its execution?",
+            "question": "Analyze the code below: 'let x=10'; console.log(x);. What exception will be thrown as a result of its execution attempt? ",
            "answers":[
-             {"option": "'x'", "answer":"false"},
-             {"option": "20", "answer":"false"},
-             {"option": "10", "answer":"false"},
-             {"option": "Nothing will show up", "answer":"true"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "3",
-           "question": "Analyze the code below: function test (counter){console.log('test'); if (counter >0) test (--counter); } test (3);. How many times will the word 'test' be displayed in the console?",
+           "question": " Analyze the following code: const x=10; onsole.log(x); x+=10;. What exception will be thrown as a result of its execution attempt?",
            "answers":[
-             {"option": "3", "answer":"false"},
-             {"option": "4", "answer":"true"}, 
-             {"option": "0", "answer":"false"},
-             {"option": "2", "answer":"false"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}, 
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "4",
-            "question": "We have defined an arrow function: let multiply = (m,n) => m*n;. We will try to write it in a slightly modified form, but without changing what it is supposed to do. Point out the correct definition:",
+            "question": "Analyze the following code: let x 10; console.log(x);. What exception will be thrown as a result of its execution attempt?",
            "answers":[
-             {"option": "let multiply = (m,n) => {console.log(m*n);}", "answer":"false"},
-             {"option": "let multiply = (m,n) => return(m*n)", "answer":"false"},
-             {"option": "let multiply = (m,n) => {return(m*n);}", "answer":"true"},
-             {"option": "let multiply = (m,n) => m*n", "answer":"false"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "5",
-           "question": "A callback function is a function that:",
+           "question": "Where can we finde in the debugger the information about the currently called functions in our program?:",
            "answers":[
-             {"option": "Is passed to another function as an argument and only called in its code.", "answer":"true"},
-             {"option": "Contains a reference to itself in its code.", "answer":"false"},
-             {"option": "Is always executed at fixed intervals.", "answer":"false"},
-             {"option": "Is always called with a certain pre-defined delay.", "answer":"false"}
+             {"option": ".", "answer":""},
+             {"option": ".", "answer":""},
+             {"option": ".", "answer":""},
+             {"option": ".", "answer":""}
            ]
         },
         { 
            "__comment": "6",
-           "question": "We can use the forEach method to pass through the elements of an array. Which of the following code snippets will display all consecutive elements of the animals array in the console? ",
+           "question": "Analyze the following code: let x=10; ocnsole.log(x);. What exception will be thrown as a result of its execution attempt? ",
            "answers":[
-             {"option": "forEach (animals, a => {console.log(a);})", "answer":"false"},
-             {"option": "animals.forEach (a => {console.log(a);})", "answer":"true"},
-             {"option": "animals.forEach (a => a)", "answer":"false"},
-             {"option": "animals.forEach (console.log(animal))", "answer":"false"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "7",
-            "question": "Review the following code: let x=10; let y=20;  function test (y) {console.log (y);} test (x);. What will be displayed in the console as a result of its execution?",
+            "question": "Analyze the following code: try{ocnsole.log('start');}catch (error){console.log('error');} console.log ('end');. What will happen as a result of its execution?",
            "answers":[
-             {"option": "20", "answer":"false"},
-             {"option": "'y'", "answer":"false"},
-             {"option": "Nothing, because the function expects the y variable to be passed and receives x instead.", "answer":"false"} ,
-             {"option": "10", "answer":"true"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""} ,
+             {"option": "", "answer":""}
            ]
         },
         { 
