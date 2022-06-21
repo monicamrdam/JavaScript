@@ -2,67 +2,67 @@
     "questions":[
         { 
             "__comment": "1",
-           "question": "The condition if (!a) can be replaced by the condition:",
+           "question": "Analyze the following code: let show = function (){console.log (test);} setTimeout (show, 2000);. Its execution will cause.",
            "answers":[
-             {"option": "'if(a===false);'", "answer":"false"},
-             {"option": "if(a);", "answer":"false"},
-             {"option": "if(!!a);", "answer":"false"},
-             {"option": "if (a == false);", "answer":"true"}
+             {"option": "The ", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "2",
-            "question": "Examine the following code: for (let a= 4 < 4; a++ {console.log('test'};. How may times will 'test' be displayed in the console as a result of its execution?')",
+            "question": "Analyze the following code: let x=10; function test (){let x =20; console.log(x);}. What will be displayed in the console as a result of its execution?",
            "answers":[
-             {"option": "4", "answer":"false"},
-             {"option": "3", "answer":"false"},
-             {"option": "it will not be displayed at all", "answer":"true"},
-             {"option": "1", "answer":"false"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "3",
-           "question": "The switch statement:",
+           "question": "Analyze the code below: function test (counter){console.log('test'); if (counter >0) test (--counter); } test (3);. How many times will the word 'test' be displayed in the console?",
            "answers":[
-             {"option": "Is a conditional statement that works identically to the if statement ;", "answer":"true"},
-             {"option": "Allows you to change the progam mode to debug mode;", "answer":"false"}, 
-             {"option": "Is not present in the JavaScript Language", "answer":"false"},
-             {"option": "Is a conditional statement that allows different actions to be taken depending on the value stored in the indicated variable.", "answer":"false"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}, 
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "4",
-            "question": "Which of the following operators is a ternary one?:",
+            "question": "We have defined an arrow function: let multiply = (m,n) => m*n;. We will try to write it in a slightly modified form, but without changing what it is supposed to do. Point out the correct definition:",
            "answers":[
-             {"option": "A conditional operator ?:", "answer":"true"},
-             {"option": "A typeof operator", "answer":"false"},
-             {"option": "An assignment operator =", "answer":"false"},
-             {"option": "An increment operator ++", "answer":"false"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "5",
-           "question": "Examine the following code: let car = {make : 'Citroen', model: ''DS'}; for (let f in car) console.log (f);. What will appear on the console as a result? :",
+           "question": "A callback function is a function that:",
            "answers":[
-             {"option": "'car'.", "answer":""},
-             {"option": "'make: Citroen' 'model: DS'.", "answer":"false"},
-             {"option": "'Citroen' 'DS'.", "answer":"false"},
-             {"option": "'make' 'model'.", "answer":""}
+             {"option": "", ""},
+             {"option": "", ""},
+             {"option": "", ""},
+             {"option": "", ""}
            ]
         },
         { 
            "__comment": "6",
-           "question": "Analyze the code below: if (counter === 10) {console.log('abc');}. How can we write the same condition using the switch statement? ",
+           "question": "We can use the forEach method to pass through the elements of an array. Which of the following code snippets will display all consecutive elements of the animals array in the console? ",
            "answers":[
-             {"option": "case (counter) {switch 10: console.log('abc')};", "answer":"false"},
-             {"option": "switch (counter) {case 10: console.log('abc')};", "answer":"true"},
-             {"option": "swtich (counter) {case ? 10: console.log('abc')};", "answer":"false"},
-             {"option": "swtich (counter) case 10: console.log('abc');", "answer":"false"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "7",
-            "question": "Analyze the following code: for (let x = 10; x > 1; x -=2) console.log('hello');. How many times will 'hello' be displayed in the console as a result of its execution?:",
+            "question": "Review the following code: let x=10; let y=20;  function test (y) {console.log (y);} test (x);. What will be displayed in the console as a result of its execution?",
            "answers":[
              {"option": "4", "answer":"false"},
              {"option": "5", "answer":"true"},
@@ -72,42 +72,42 @@
         },
         { 
            "__comment": "8" ,
-           "question": "Examine the following code: let steps = [3,2,1]; for (let n of steps) console.log (n);. What will appear on the console as a restult?:",
+           "question": "Review the following code: let x =10; function test (x){console.log (x);} test (20);. What will be displayed in the console as a result of its execution?",
            "answers":[
-             {"option": "123", "answer":"false"},
-             {"option": "'[3,2,1]'", "answer":"false"},
-             {"option": "0 1 2", "answer":"false"},
-             {"option": "3 2 1", "answer":"true"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "9",
-           "question": "If we want to display all the elements of the days arrays in reverse order (starting from the last element) then we can do this using the statement: ",
+           "question": "The code snippet: function test(){} is: ",
            "answers":[
-             {"option": "for(let i = days.length; i > 0;i--)console.log(i);", "answer":""},
-             {"option": "for(let i = days.length; i > 0;i--)console.log(days[i]);", "answer":""},
-             {"option": "for(let i = days.length -1; i > 0;i--)console.log(days[i]);", "answer":"false"},
-             {"option": "for(let i = days.length - 1; i >= 0;i--)console.log(days[i]);", "answer":""}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "10",
-           "question": "Whitch of the following loop instructions is intended only to loop throught all the keys of the indicated object?.:" ,
+           "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
            "answers":[
-             {"option": "for...of", "answer":"false"},
-             {"option": "do...while", "answer":""},
-             {"option": "if...else", "answer":""},
-             {"option": "for...in", "answer":"false"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
            "__comment": "11",
-            "question": "Analyze the following code: let a= 10; do { console.log(a--);} while ( a > 3);. Whitch statement can replace the do ... while form the example above?:",
+            "question": "If the function is to return some calculated value on completion, we use the following keyword to do so:",
            "answers":[
-             {"option": "while (a>3) console.log(a--);", "answer":"true"},
-             {"option": "while (a>4) console.log(--a);", "answer":"false"},
-             {"option": "while (a>2) console.log(--a);", "answer":"false"},
-             {"option": "while (a>=3) console.log(a--);", "answer":"false"}
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""},
+             {"option": "", "answer":""}
            ]
         },
         { 
