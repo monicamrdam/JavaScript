@@ -1,143 +1,133 @@
 {
     "questions":[
-        { 
-            "__comment": "1",
-           "question": "Which of the following is a syntax error?",
+       { 
+           "__comment": "1",
+            "question": "Analyze the following code: try{console.log('start');}catch(error){console.log('error');}{finally {console.log('end')}}. What will happen as a result of its execution? ",
            "answers":[
-             {"option": ".", "answer":""},
-             {"option": ".", "answer":""},
-             {"option": ".", "answer":""},
-             {"option": ".", "answer":""}
+             {"option": "The words 'start', 'error', 'end' will appear in the console on successive lines.", "answer":"false"},
+             {"option": "The following words will appear in the console: 'start', 'end'.", "answer":"true"},
+             {"option": "The following words will appear in the console: 'error', 'end'.", "answer":"false"},
+             {"option": "The word 'error' will appear in the console.", "answer":"false"}
            ]
         },
         { 
            "__comment": "2",
-            "question": "Analyze the code below: 'let x=10'; console.log(x);. What exception will be thrown as a result of its execution attempt? ",
+           "question": " Analyze the following code: let x =10; ocnsole.log(x);. What exception will be thrown as a result of its execution attempt?",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "TypeError", "answer":"false"},
+             {"option": "SyntaxError", "answer":"false"}, 
+             {"option": "RangeError", "answer":"false"},
+             {"option": "ReferenceError", "answer":"true"}
            ]
         },
         { 
            "__comment": "3",
-           "question": " Analyze the following code: const x=10; onsole.log(x); x+=10;. What exception will be thrown as a result of its execution attempt?",
+            "question": "Analyze the following code: const x = 10; onsole.log(x); x+=10;. What exception will be thrown as a result of its execution attempt?",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}, 
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "ReferenceError", "answer":"true"},
+             {"option": "ReferenceError and TypeError", "answer":"false"},
+             {"option": "SyntaxError", "answer":"false"},
+             {"option": "TypeError", "answer":"false"}
            ]
         },
         { 
            "__comment": "4",
-            "question": "Analyze the following code: let x 10; console.log(x);. What exception will be thrown as a result of its execution attempt?",
+           "question": "Analyze the code below: 'let x =10'; console.log(x);. What exception will be thrown as a result of its execution attempt?",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "SyntaxError", "answer":"false"},
+             {"option": "ReferenceError.", "answer":"true"},
+             {"option": "TypeError.", "answer":"false"},
+             {"option": "RangeError.", "answer":"false"}
            ]
         },
         { 
            "__comment": "5",
-           "question": "Where can we find in the debugger the information about the currently called functions in our program?:",
+           "question": "We want to measure how long a certain piece of code executes. In order to do so, it is enough to:  ",
            "answers":[
-             {"option": ".", "answer":""},
-             {"option": ".", "answer":""},
-             {"option": ".", "answer":""},
-             {"option": ".", "answer":""}
+             {"option": "Precede the fragment with the command console.timeStart('counter') and end with console.timeEnd('counter').", "answer":"false"},
+             {"option": "Precede the fragment with the command console.time('start') and end with console.time('end').", "answer":"false"},
+             {"option": "Precede the fragment with the command console.time('counter') and end with console.timeEnd('counter').", "answer":"true"},
+             {"option": "Precede the fragment with the command timeStart() and end with timeEnd().", "answer":"false"}
            ]
         },
         { 
            "__comment": "6",
-           "question": "Analyze the following code: let x=10; ocnsole.log(x);. What exception will be thrown as a result of its execution attempt? ",
+            "question": "Which of the following is a syntax error?",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""}
+             {"option": "Attempting to modify the value of a constant.", "answer":"false"},
+             {"option": "Attempting to call a non-existent function.", "answer":"false"},
+             {"option": "Missing parenthesis ending a condition in an if statement.", "answer":"true"} ,
+             {"option": "Attempting to read a value from a variable that we have not previously declared.", "answer":"false"}
            ]
         },
         { 
-           "__comment": "7",
-            "question": "Analyze the following code: try{ocnsole.log('start');}catch (error){console.log('error');} console.log ('end');. What will happen as a result of its execution?",
+           "__comment": "7" ,
+           "question": "Analyze the following code: let x 10; console.log (x);. What exception will be thrown as a result of its execution attempt?",
            "answers":[
-             {"option": "", "answer":""},
-             {"option": "", "answer":""},
-             {"option": "", "answer":""} ,
-             {"option": "", "answer":""}
+             {"option": "ReferenceError", "answer":"false"},
+             {"option": "SyntaxError", "answer":"true"},
+             {"option": "RangeError", "answer":"falsefalse"},
+             {"option": "TypeError", "answer":"false"}
            ]
         },
         { 
-           "__comment": "8" ,
-           "question": "Review the following code: let x =10; function test (x){console.log (x);} test (20);. What will be displayed in the console as a result of its execution?",
+           "__comment": "8",
+           "question": "Analyze the following code: try{ocnsole.log('start');}catch(error){console.log('error');}console.log('end'). What will happen as a result of its execution? ",
            "answers":[
-             {"option": "Nothing will show up.", "answer":"false"},
-             {"option": "20", "answer":"true"},
-             {"option": "x", "answer":"false"},
-             {"option": "10", "answer":"false"}
+             {"option": "In the console, there will appear in successive lines the words 'error', 'end'.", "answer":"true"},
+             {"option": "The operation of the program will be interrupted and the console will display the default message 'Uncaught ReferenceError: ocnsole is not defined'.", "answer":"false"},
+             {"option": "The console will display the words 'start', 'error', 'end' on successive lines.", "answer":"false"},
+             {"option": "The following words will appear in the console 'start', 'end'.", "answer":"false"}
            ]
         },
         { 
            "__comment": "9",
-           "question": "The code snippet: function test(){} is: ",
+           "question": "Where can we find in the debugger the information about the currently called functions in our program?" ,
            "answers":[
-             {"option": "The declaration of an empty test function.", "answer":"true"},
-             {"option": "The call of the test funcion.", "answer":"false"},
-             {"option": "Incorrect, as the code is wrong and does not mean anything.", "answer":"false"},
-             {"option": "The declaration fo the test variable in which the values returned by the completed function will be stored.", "answer":"false"}
+             {"option": "In the watch window.", "answer":"false"},
+             {"option": "In the console.", "answer":"false"},
+             {"option": "In the call stack window.", "answer":"true"},
+             {"option": "We do not have access to such information.", "answer":"false"}
            ]
         },
         { 
            "__comment": "10",
-           "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
+            "question": "What is the name of the place where program code execution is halted?",
            "answers":[
-             {"option": "let sum = function (a , b) => {return(a + b);};", "answer":"false"},
-             {"option": "let sum = (a , b) => a + b;", "answer":""},
-             {"option": "let sum = (a , b) => {a + b;};", "answer":"false"},
-             {"option": "let sum = (a , b) > a + b;", "answer":""}
+             {"option": "Exitpoint.", "answer":"false"},
+             {"option": "Stoppoint.", "answer":"false"},
+             {"option": "Pausepoint.", "answer":"false"},
+             {"option": "Breakpoint.", "answer":"true"}
            ]
         },
         { 
            "__comment": "11",
-            "question": "If the function is to return some calculated value on completion, we use the following keyword to do so:",
+           "question": "Analyze the following code: const x=10; x =20;. What exception will be thrown as a result of its execution attempt?." ,
            "answers":[
-             {"option": "ret;", "answer":"false"},
-             {"option": "yield;", "answer":"false"},
-             {"option": "return;", "answer":"true"},
-             {"option": "function;", "answer":"true"}
+             {"option": "SyntaxError", "answer":"false"},
+             {"option": "ReferenceError", "answer":"false"},
+             {"option": "TypeError", "answer":"true"},
+             {"option": "RangeError", "answer":"false"}
            ]
         },
         { 
            "__comment": "12",
-           "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
+           "question": "Logical errors that we make while writting a program are not indicated by the interpreter. Why?" ,
            "answers":[
-             {"option": "let sum = function (a , b) => {return(a + b);};", "answer":"false"},
-             {"option": "let sum = (a , b) => a + b;", "answer":""},
-             {"option": "let sum = (a , b) => {a + b;};", "answer":"false"},
-             {"option": "let sum = (a , b) > a + b;", "answer":""}
+             {"option": "The interpreter does not indicate errors while the program is running, because it detects them before the program runs (it does not allow the program to run).", "answer":"false"},
+             {"option": "It results from the default settings of the interpreter, although we can modify these setting so that logical errors are also pointed out.", "answer":"false"},
+             {"option": "The interpreter is unable t identify logical errors becaus they are not related to either the syntax or the semantics of the JavaScript language.", "answer":"true"},
+             {"option": "The interpreter ignores logical errores, because they do not affect the result of the program in any way.", "answer":"false"}
            ]
         },
         { 
            "__comment": "13",
-           "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
+           "question": "Using the debugger, we insert a breakpoint in the code at which, after running the program, we stop. In the debugger, we find a Step button among the step-by-step operation options. What does pressing it do?" ,
            "answers":[
-             {"option": "let sum = function (a , b) => {return(a + b);};", "answer":"false"},
-             {"option": "let sum = (a , b) => a + b;", "answer":""},
-             {"option": "let sum = (a , b) => {a + b;};", "answer":"false"},
-             {"option": "let sum = (a , b) > a + b;", "answer":""}
-           ]
-        },
-        { 
-           "__comment": "14",
-           "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
-           "answers":[
-             {"option": "let sum = function (a , b) => {return(a + b);};", "answer":"false"},
-             {"option": "let sum = (a , b) => a + b;", "answer":""},
-             {"option": "let sum = (a , b) => {a + b;};", "answer":"false"},
-             {"option": "let sum = (a , b) > a + b;", "answer":""}
+             {"option": "The program will be executed to the end, regardless of whether ther are more breakpoints in the rest of the code or not.", "answer":"false"},
+             {"option": "The program will be restarted from the first instruction.", "answer":"false"},
+             {"option": "The program will execute to the end or to the next breakpoint.;", "answer":"false"},
+             {"option": "Exactly one instruction inmmediately after the breakpoint will be executed and the program will be paused again.", "answer":"true"}
            ]
         }
         
