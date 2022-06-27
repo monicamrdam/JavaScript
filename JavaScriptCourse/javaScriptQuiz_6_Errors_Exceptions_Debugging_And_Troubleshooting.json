@@ -42,7 +42,7 @@
         },
         { 
            "__comment": "5",
-           "question": "Where can we finde in the debugger the information about the currently called functions in our program?:",
+           "question": "Where can we find in the debugger the information about the currently called functions in our program?:",
            "answers":[
              {"option": ".", "answer":""},
              {"option": ".", "answer":""},
