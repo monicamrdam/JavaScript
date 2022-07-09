@@ -1,1 +1,275 @@
-
+{
+    "questions":[
+       { 
+           "__comment": "1",
+            "question": "Entering about:black in the address bar of your browser will:",
+           "answers":[
+             {"option": "Clear all inputs on the current page.", "answer":""},
+             {"option": "Open a tab with information about your browser.", "answer":""},
+             {"option": "Generate a page with information about the browser's status.", "answer":""},
+             {"option": "Generate and load a minimal blank HTML pag into the current tab.", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "2",
+           "question": " Analyze the following code: let colors = ['red', 'green', 'blue']; for (lec c of colors) console.log(c);. What will appear on the console as a result?",
+           "answers":[
+             {"option": "red green blue", "answer":"true"},
+             {"option": "['red','green','blue']", "answer":""}, 
+             {"option": "3", "answer":""},
+             {"option": "0 1 2", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "3",
+            "question": "Analyze the following code: let id ='100'; {let id =200; id = id + 1; console.log(id);}. What will appear to the console as a result?",
+           "answers":[
+             {"option": "1001", "answer":""},
+             {"option": "200", "answer":""},
+             {"option": "101", "answer":""},
+             {"option": "201", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "4",
+           "question": "Analyze the code snippet: let winter = ['december', 'January', 'February']; let index = winter.indexOf ('February');. The index variable will have the value:",
+           "answers":[
+             {"option": "'February'", "answer":""},
+             {"option": "1", "answer":""},
+             {"option": "3", "answer":""},
+             {"option": "2", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "5",
+           "question": "Analyze the following code: let a = true && 20; let b = 0 || 20; let c = 0 && 20; console.log ('${a} ${b} ${c}');. What will appear in the console as a result of its execution?  ",
+           "answers":[
+             {"option": "20 20 0", "answer":""},
+             {"option": "1 1 0", "answer":""},
+             {"option": "true 20 0", "answer":""},
+             {"option": "true true false", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "6",
+            "question": "We have declared an array of animals: let animals = ['canary', 'dog', 'cat']; . Then we call the method animals.push ('hamster');. As a result, the animals array will look like this:",
+           "answers":[
+             {"option": "['hamster','canary','dog','cat']", "answer":""},
+             {"option": "['canary','dog','cat','hamster']", "answer":"true"},
+             {"option": "['canary','dog','cat']", "answer":""} ,
+             {"option": "['hamster']", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "7" ,
+           "question": "Select a set of data types, containing only complex types:",
+           "answers":[
+             {"option": "Array, Object", "answer":""},
+             {"option": "Object, String", "answer":"false"},
+             {"option": "Boolean, Number, Bigint", "answer":""},
+             {"option": "Array, Objetc, String", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "8",
+           "question": "We define a function using a function expression: let sum = function (a, b) {return (a + b);}. What could the definition of the corresponding arrow function look like? ",
+           "answers":[
+             {"option": "let sum = (a,b) => a + b;", "answer":"true"},
+             {"option": "let sum = (a,b) --> a + b;", "answer":""},
+             {"option": "let sum = function (a,b) =>{return (a+b)};", "answer":""},
+             {"option": "let sum = (a,b) =>{a + b;};", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "9",
+           "question": "In the daysOfWeek variable, we place an array with the names of the days of the week. To reverse the order of the array elements, we should call: " ,
+           "answers":[
+             {"option": "daysOfWeek.order(-1);", "answer":""},
+             {"option": "daysOfWeek.invert();", "answer":""},
+             {"option": "daysOfWeek.reverse();", "answer":""},
+             {"option": "daysOfWeek.reverse(daysOfWeek);", "answer":"false"}
+           ]
+        },
+        { 
+           "__comment": "10",
+            "question": "The javaScript code includes the console.log('http://somethingsNew.org'); command. Its execution will:",
+           "answers":[
+             {"option": "Display on the console information about the progress of the  http://somethingsNew.org page loading.", "answer":""},
+             {"option": "Cause the page http://test.org to be loaded into the browser.", "answer":""},
+             {"option": "Display the following message on the console: 'http:// somethingsNew.org'.", "answer":"true"},
+             {"option": "Send a log with information about the currently executed script to the indicate address http://somethingsNew.org.", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "11",
+           "question": "Which of the following loop instruction checks the loop continuation condition only afeter the iteration has been completed?" ,
+           "answers":[
+             {"option": "do...while", "answer":"true"},
+             {"option": "while", "answer":""},
+             {"option": "for..in", "answer":""},
+             {"option": "for", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "12",
+           "question": "Examine the following code: x = [40, 10, 30, 20, 50]; x.sort(cmp);. How should the function cmp be declared if, after the code execution, the elements of the array x are sorted in ascending order?." ,
+           "answers":[
+             {"option": "let cmp = (a,b) => b-a;", "answer":""},
+             {"option": "let cmp = (a,b) => b < a;", "answer":"false"},
+             {"option": "let cmp = (a,b) => a - b;", "answer":""},
+             {"option": "let cmp = (a,b) => b > a;", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "13",
+           "question": "In the following code fragment, where we use setInterval, one line is missing - the place is marked in gray: let counter = 2; let interval = setInterval (() => {console.log (counter);}, 1000);. What should the missing line look like if the execution of this code results in the console displaying the values 2, 1, and 0 in sequence?" ,
+           "answers":[
+             {"option": "if (counter -- <= 0) clearInterval(interval);)", "answer":"true"},
+             {"option": "if (counter -- >= 0) clearInterval(interval);", "answer":""},
+             {"option": "while (counter -- >=0) clearInterval (interval);", "answer":""},
+             {"option": "clearInterval(interval);", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "14",
+           "question": "Analyze the following code: let x = false || true; let y = 'true' && 'false'; let z = false && true; console.log ('${x} ${y} ${z}');. What will appear in the console as a result of its execution?  ",
+           "answers":[
+             {"option": "true false false", "answer":""},
+             {"option": "false true true", "answer":"false"},
+             {"option": "false false false", "answer":""},
+             {"option": "false false true", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "15",
+           "question": "Analyze the following code: let rouet = {distance : 131, elevation: 1.4); for (let k in route) console.log(k); What will appear on the console as a result?.}" ,
+           "answers":[
+             {"option": "'distance'", "answer":""},
+             {"option": "2", "answer":""},
+             {"option": "'distance', 'elevation'", "answer":"true"},
+             {"option": "1311.4", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "16",
+           "question": "Analyze the following code: const a = 'hello'; try{console.log(a.toUpperCase());}catch(error){console.log(a)}finally{console.log(a);};. What will happen as a result of its execution:" ,
+           "answers":[
+             {"option": "The word HELLO will appear in the console", "answer":""},
+             {"option": "The following words will appear in the console: HELLO, hello", "answer":"true"},
+             {"option": "The words HELLo, hello, hello will appear in the console on subsequent lines.", "answer":""},
+             {"option": "The following words will appear in the console: hello, hello.", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "17",
+           "question": "Analyze the code snippet: let counter =0; let userName = 'John';. After declaring the counter variable, we want to add a short comment with information about what the variable is used for. To do this, we modfiy the line with the declaration to the form:" ,
+           "answers":[
+             {"option": "// let counter = 0; user vitis counter.", "answer":""},
+             {"option": "let counter = 0; // user vitis counter.", "answer":""},
+             {"option": "let counter = 0; ; ; user vitis counter.", "answer":""},
+             {"option": "let counter = 0; /*user vitis counter.", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "18",
+           "question": "Analyze the following code: let test = prompt('Run', 'code'); .What value will the test variable have if, after running the code, we inmmediately press the OK button on the newly created dialog." ,
+           "answers":[
+             {"option": "'code'", "answer":""},
+             {"option": "'Run'", "answer":""},
+             {"option": "true", "answer":""},
+             {"option": "'OK'", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "19",
+           "question": "Examine the following code: let x = [10,20,30,40]; let y = [50,60]; x.reverse().push(y); console.log(x.length);. What will appear on the console as a result?." ,
+           "answers":[
+             {"option": "5", "answer":""},
+             {"option": "6", "answer":""},
+             {"option": "2", "answer":""},
+             {"option": "4", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "20",
+           "question": "Using the string interpolation technique, we can create the string 'I do not like travelling by plane' and store it in the msg variable using the command:" ,
+           "answers":[
+             {"option": "let means= 'plane'; let msg = 'I do not like travelling by (means)';", "answer":""},
+             {"option": "let means= 'plane'; let msg = 'I do not like travelling by $(means)'", "answer":""},
+             {"option": "let means= 'plane'; let msg = 'I do not like travelling by ${means}'", "answer":""},
+             {"option": "let means= 'plane'; let msg = 'I do not like travelling by \{means\}'", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "21",
+           "question": "Examine the following code: let a = (n) => {return n > 2 ? n * a (n-1) : 2} a (6);" ,
+           "answers":[
+             {"option": "4", "answer":""},
+             {"option": "720", "answer":""},
+             {"option": "6", "answer":""},
+             {"option": "120", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "22",
+           "question": "Analyze the following code: function execute (todo, a, b){return todo (a,b);} console.log (execute (power, 3,2));. Before declaring the function, we should add one more line of code. Which one, if the execution of the completed code will result in the console displaying the value 9?" ,
+           "answers":[
+             {"option": "let power = 9;", "answer":""},
+             {"option": "let power = (x,y) => x ** y;", "answer":""},
+             {"option": "let power = () => a ** b;", "answer":""},
+             {"option": "let power = (x,y) => x * y;", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "23",
+           "question": "Examine the following code: let a = 20 + '10'; let b = 20 + '10'; let c = 20 + -'10' + '10'; let d = '10' - '10' + '100'; let e = 'A' - 'B' + 0xA; console.log(); .What will appear on the consoloe as a result?" ,
+           "answers":[
+             {"option": "30, 30, 20, 100,2", "answer":""},
+             {"option": "30, 31, 39, 100, NaN", "answer":""},
+             {"option": "2010, 30, 1010, 0100, NaN", "answer":""},
+             {"option": "2010, 2010, 20-1010, 0100, NaN", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "24",
+           "question": "We declare a movie object, with two fields: title and year: let movie = {title: 'aga', year: 2018};. To change the value of the title field to 'Aga' we need to perform:" ,
+           "answers":[
+             {"option": "movie {title} = 'Aga';", "answer":""},
+             {"option": "title --> movie = 'Aga';", "answer":""},
+             {"option": "movie [title] = 'Aga';", "answer":""},
+             {"option": "movie.title = 'Aga';", "answer":""}
+           ]
+        },
+        { 
+           "__comment": "13",
+           "question": "In the following code fragment, wher we use setInterval, one line is missing - the place is marked in gray: let counter = 2; let interval = setInterval (() => {console.log (counter);}, 1000);. What should the missing line look like if the execution of this code results in the console displaying the values 2, 1, and 0 in sequence?" ,
+           "answers":[
+             {"option": "The program will be executed to the end, regardless of whether ther are more breakpoints in the rest of the code or not.", "answer":"false"},
+             {"option": "The program will be restarted from the first instruction.", "answer":"false"},
+             {"option": "The program will execute to the end or to the next breakpoint.;", "answer":"false"},
+             {"option": "Exactly one instruction inmmediately after the breakpoint will be executed and the program will be paused again.", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "13",
+           "question": "In the following code fragment, wher we use setInterval, one line is missing - the place is marked in gray: let counter = 2; let interval = setInterval (() => {console.log (counter);}, 1000);. What should the missing line look like if the execution of this code results in the console displaying the values 2, 1, and 0 in sequence?" ,
+           "answers":[
+             {"option": "The program will be executed to the end, regardless of whether ther are more breakpoints in the rest of the code or not.", "answer":"false"},
+             {"option": "The program will be restarted from the first instruction.", "answer":"false"},
+             {"option": "The program will execute to the end or to the next breakpoint.;", "answer":"false"},
+             {"option": "Exactly one instruction inmmediately after the breakpoint will be executed and the program will be paused again.", "answer":"true"}
+           ]
+        },
+        { 
+           "__comment": "13",
+           "question": "In the following code fragment, wher we use setInterval, one line is missing - the place is marked in gray: let counter = 2; let interval = setInterval (() => {console.log (counter);}, 1000);. What should the missing line look like if the execution of this code results in the console displaying the values 2, 1, and 0 in sequence?" ,
+           "answers":[
+             {"option": "The program will be executed to the end, regardless of whether ther are more breakpoints in the rest of the code or not.", "answer":"false"},
+             {"option": "The program will be restarted from the first instruction.", "answer":"false"},
+             {"option": "The program will execute to the end or to the next breakpoint.;", "answer":"false"},
+             {"option": "Exactly one instruction inmmediately after the breakpoint will be executed and the program will be paused again.", "answer":"true"}
+           ]
+        }
+        
+    ]
+}
