@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+}
+/* ESTILOS NORMALES (para móviles en vertical)*/
+body {
+  background: white;
+}
+li {
+  color: white;
+}
+.menu {
+  background-image: url("https://es.web.img3.acsta.net/pictures/18/10/31/17/34/2348073.jpg");
+  opacity: 0.15;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  /* calcula el ancho del vh - el tamaño de la caja */
+  /* se puede usar /2 para que no crezca el vh */
+  margin: calc((100vh - 450px) / 2) auto;
+  width: 450px;
+  height: 450px;
+  background-color: red;
+}
+
+.hijo {
+  /*width: 150px;
+  height: 150px;*/
+  background-color: rgba(50, 50, 50, 0.75);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /*texto alineado*/
+  word-wrap: break-word; /*Dentro Contenedor*/
+  font-size: 50px;
+}
+
+/* Móviles en horizontal o tablets en vertical */
+@media (min-width: 768px) {
+  body {
+    background: red;
+  }
+}
+
+/* Tablets en horizonal y escritorios normales*/
+@media (min-width: 1024px) {
+  body {
+    background: green;
+  }
+}
+
+/* Escritorios muy anchos*/
+@media (min-width: 1200px) {
+  body {
+    background: blue;
+  }
+}
