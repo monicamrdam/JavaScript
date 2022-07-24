@@ -15,19 +15,19 @@
             "question": "In the daysOfWeek variable, we place un array with the names of the days of the week. To reverse the order of the array elements, we should call:",
            "answers":[
              {"option": "daysOfWeek.reverse();", "answer":"true"},
-             {"option": "reverse daysOfWeek;", "answer":""},
-             {"option": "invert(daysOfWeek);", "answer":""},
-             {"option": "daysOfWeek.invert();", "answer":""}
+             {"option": "reverse daysOfWeek;", "answer":"false"},
+             {"option": "invert(daysOfWeek);", "answer":"false"},
+             {"option": "daysOfWeek.invert();", "answer":"false"}
            ]
         },
         { 
            "__comment": "3",
            "question": "We need to come up with a name for a variable where we will store the age of a user. All of teh following variable names are formally correct, but one of them is the most readable, indicate which one:",
            "answers":[
-             {"option": "age.", "answer":""},
+             {"option": "age.", "answer":"false"},
              {"option": "userAge.", "answer":"true"}, 
-             {"option": "ua.", "answer":""},
-             {"option": "user", "answer":""}
+             {"option": "ua.", "answer":"false"},
+             {"option": "user", "answer":"false"}
            ]
         },
         { 
@@ -54,9 +54,9 @@
            "__comment": "6",
            "question": "Analyze the code snippet: /n let name; /n let age; { let height;{let weight; console.log(name);} console.log(name);} We have access to the weight variable: ",
            "answers":[
-             {"option": "Throughout the program.", "answer":""},
-             {"option": "In the part marked 1.", "answer":""},
-             {"option": "In the part marked 2.", "answer":""},
+             {"option": "Throughout the program.", "answer":"false"},
+             {"option": "In the part marked 1.", "answer":"true"},
+             {"option": "In the part marked 2.", "answer":"false"},
              {"option": "Nowhere, as we have no access at all (the variables has not been initizlized ).", "answer":"false"}
            ]
         },
@@ -74,7 +74,7 @@
            "__comment": "8" ,
            "question": "We can replace the declaration 1et x = 0x21; with:",
            "answers":[
-             {"option": "let x = 17;", "answer":""},
+             {"option": "let x = 17;", "answer":"false"},
              {"option": "let x = 21;", "answer":"false"},
              {"option": "let x = '0x21';", "answer":"false"},
              {"option": "let x =33;", "answer":""}
@@ -86,7 +86,7 @@
            "answers":[
              {"option": "An infinity value being stored in the variable x. ", "answer":""},
              {"option": "The value 0 being stored in the variable x.", "answer":"false"},
-             {"option": "The value NaN being stored in the variable x.", "answer":""},
+             {"option": "The value NaN being stored in the variable x.", "answer":"false"},
              {"option": "An undefined value being stored in the variable x.", "answer":"false"}
            ]
         },
@@ -156,10 +156,10 @@
            "__comment": "16",
            "question": "Performing the operation: let x= 20n + 10; will result in: ",
            "answers":[
-             {"option": "Result in a value of 30n being stored in the variable x.", "answer":""},
-             {"option": "Cause the program to abort due to an error.", "answer":""},
+             {"option": "Result in a value of 30n being stored in the variable x.", "answer":"false"},
+             {"option": "Cause the program to abort due to an error.", "answer":"true"},
              {"option": "Result in the string '20n10' being stored in the variable x.", "answer":"false"},
-             {"option": "Result in a value of 30 being stored in the variable x. ", "answer":""}
+             {"option": "Result in a value of 30 being stored in the variable x. ", "answer":"false"}
            ]
         }
         ,
@@ -178,9 +178,9 @@
            "__comment": "18",
            "question": "Analyze the following code: let counter =100; let counter = 200, counter = 300; . As a result of its execution:",
            "answers":[
-             {"option": "The program will be aborted due to an error (redeclaration of a variable).", "answer":""},
-             {"option": "The counter variable will have the value 100.", "answer":""},
-             {"option": "The counter variable will have the value 200.", "answer":""},
+             {"option": "The program will be aborted due to an error (redeclaration of a variable).", "answer":"true"},
+             {"option": "The counter variable will have the value 100.", "answer":"false"},
+             {"option": "The counter variable will have the value 200.", "answer":"false"},
              {"option": "The counter variable will have the value 300.", "answer":"false"}
            ]
         }
@@ -213,7 +213,7 @@
            "answers":[
              {"option": "const distance; distance = 120;", "answer":"false"},
              {"option": "let constant distance = 120;", "answer":"false"},
-             {"option": "cons distance=120;", "answer":"true"},
+             {"option": "const distance=120;", "answer":"true"},
              {"option": "let distance; const distance=120;", "answer":"false"}
            ]
         },
@@ -222,9 +222,9 @@
             "question": "The msg variable contains a String type value. Information about the number of characters of this string can be obtained using:",
             "answers":[
               {"option": "msg.length();", "answer":"false"},
-              {"option": "msg.chars;", "answer":""},
+              {"option": "msg.chars;", "answer":"false"},
               {"option": "msg.charsAt();", "answer":"false"},
-              {"option": "msg.length;", "answer":""}
+              {"option": "msg.length;", "answer":"true"}
             ]
          },
          { 
@@ -251,10 +251,10 @@
             "__comment": "25",
             "question": "Complex (or composite) data types:",
             "answers":[
-              {"option": "Is an alternative name for primitive types.", "answer":""},
-              {"option": "Are not used in JavaScript.", "answer":""},
+              {"option": "Is an alternative name for primitive types.", "answer":"false"},
+              {"option": "Are not used in JavaScript.", "answer":"false"},
               {"option": "May consist of multiple elements, each of which is of a primitive type.", "answer":"false"},
-              {"option": "May consist of multiple elements, each of which may be of a primitive or composite type. ", "answer":""}
+              {"option": "May consist of multiple elements, each of which may be of a primitive or composite type. ", "answer":"true"}
             ]
          },
          { 
