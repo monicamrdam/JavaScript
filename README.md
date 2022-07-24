@@ -4,7 +4,12 @@
 
 ### The JavaScript Essentials course series is divided into two parts:
 - JavaScript Essentials 1 (JSE1): BASICS, consisting of six modules.
+  1. Module 1: introduction to JavaScript and Computer Programming.
+  2. Module 2: variables, data types, type casting and Comments.
+  3. Module 3: operators and user interaction.
+  4. Module 4: control flow - condicional execution and loops.
+  5. Module 5: functions.
+  6. Module 6: errors, exceptions, debugging, and troubleshooting.
 - JavaScript Essentials 2 (JSE2): INTERMEDIATE, consisting of four modules.
 
-### Scheme 
-[Scheme](https://pages.github.com/](https://edube.org/learn/netacad-resources-javascript-essentials-1-0-eng/javascript-essentials-about-the-curriculum)
+
