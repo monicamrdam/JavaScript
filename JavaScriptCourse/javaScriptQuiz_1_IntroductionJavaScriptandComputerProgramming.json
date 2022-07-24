@@ -1,7 +1,7 @@
 {
     "questions":[
         { 
-            "__comment": "1"
+            "__comment": "1",
            "question": "What tag do we use in HTML to denote the main part of the document inside which we define the page elements?",
            "answers":[
              {"option": "<body>", "answer":"true"},
@@ -11,7 +11,7 @@
            ]
         }
         { 
-           "__comment": "2"
+           "__comment": "2",
             "question": "A cliente-side javaScript program:",
            "answers":[
              {"option": "should be embedded inside an HTML document", "answer":"true"},
@@ -21,7 +21,7 @@
            ]
         }
         { 
-           "__comment": "3"
+           "__comment": "3",
            "question": "Entering about:blank in the address bar of your browser will:",
            "answers":[
              {"option": "reset the browser to its default settings", "answer":"false"},
@@ -31,7 +31,7 @@
            ]
         }
         { 
-           "__comment": "4"
+           "__comment": "4",
             "question": "The basic toolkit needed to effectively develop JavaScript code consists of two elements:",
            "answers":[
              {"option": "interpreter, debugger.", "answer":"false"},
@@ -41,7 +41,7 @@
            ]
         }
         { 
-           "__comment": "5"
+           "__comment": "5",
            "question": "What is not the task of the interpreter?",
            "answers":[
              {"option": "Creating a runtime environment for the program.", "answer":"false"},
@@ -51,7 +51,7 @@
            ]
         }
         { 
-           "__comment": "6"
+           "__comment": "6",
            "question": "Where will we definitely not be able to execute JavaScript code?",
            "answers":[
              {"option": "Directly in the processor.", "answer":"true"},
@@ -61,17 +61,17 @@
            ]
         }
         { 
-           "__comment": "7"
+           "__comment": "7",
             "question": "The TypeScript language is:",
            "answers":[
-             {"option": "A new language based on JavaScript which, among other things, introduces static typing.", "answer":"false"},
+             {"option": "A new language based on JavaScript which, among other things, introduces static typing.", "answer":"true"},
              {"option": "An alternative name for JavaScript", "answer":"false"},
-             {"option": "A variant of JavaScript that is compiled rather than interpreted.", "answer":"true"} 
+             {"option": "A variant of JavaScript that is compiled rather than interpreted.", "answer":"false"} 
              {"option": "The original name for JavaScript, which has been changed over time.", "answer":"false"}
            ]
         }
         { 
-           "__comment": "8" 
+           "__comment": "8" ,
            "question": "HTML is:",
            "answers":[
              {"option": "A language for describing the structure of a web page.", "answer":"true"},
@@ -81,17 +81,17 @@
            ]
         }
         { 
-           "__comment": "9"
+           "__comment": "9",
            "question": "In a browser, we want to open a local file by typing the path to it in the address bar. The path must be preceded by:",
            "answers":[
              {"option": "https://", "answer":"false"},
-             {"option": "http://.", "answer":"false"},
-             {"option": "file://.", "answer":"true"}
+             {"option": "http://", "answer":"false"},
+             {"option": "file:///", "answer":"true"}
              {"option": "local:///.", "answer":"false"}
            ]
         }
         { 
-           "__comment": "10"
+           "__comment": "10",
            "question": "Using JavaScript, we want to display the word 'test' in the console. What statement do we use to do this?:" ,
            "answers":[
              {"option": "console('test');", "answer":"false"},
@@ -101,7 +101,7 @@
            ]
         }
         { 
-           "__comment": "11"
+           "__comment": "11",
             "question": "In the browser, we type into the address bar a string starting with file://. This means that:",
            "answers":[
              {"option": "We do not want to open the page, but only download a file from the remote address and save it on the local machine.", "answer":"false"},
@@ -111,7 +111,7 @@
            ]
         }
         { 
-           "__comment": "12"
+           "__comment": "12",
            "question": "The javaScript code includes the console.log('http://test.org'); command. Its ejecution will:",
            "answers":[
              {"option": "Display on the console information about the progress of http://test.org page loading.", "answer":"false"},
@@ -121,7 +121,7 @@
            ]
         }
         { 
-           "__comment": "13"
+           "__comment": "13",
             "question": "The <html> tag indicates the start of the actual HTML docuemnt. What tag should appear at the end of the document?",
            "answers":[
              {"option": "<lmth>", "answer":"false"},
@@ -131,7 +131,7 @@
            ]
         }
         { 
-           "__comment": "14"
+           "__comment": "14",
            "question": "Wath HTML tag is used to indicate that we are embedding javaScript code?",
            "answers":[
              {"option": "<script>", "answer":"true"},
