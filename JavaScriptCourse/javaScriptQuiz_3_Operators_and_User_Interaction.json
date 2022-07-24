@@ -1,4 +1,5 @@
 
+
 {
     "questions":[
         { 
@@ -86,7 +87,7 @@
            "question": "Analyze the following code: let text = prompt ('Hello', 'World'); What value will the test variable have if, after running the code, we inmmediately press the OK button onthe newly created dialog?",
            "answers":[
              {"option": "true", "answer":"false"},
-             {"option": "World", "answer":""},
+             {"option": "World", "answer":"true"},
              {"option": "Hello", "answer":"false"},
              {"option": "OK", "answer":"false"}
            ]
@@ -116,7 +117,7 @@
            "question": "The result of the operation 20 || 5 will be: ",
            "answers":[
              {"option": "20", "answer":"true"},
-             {"option": "5", "answer":""},
+             {"option": "5", "answer":"false"},
              {"option": "true", "answer":"false"},
              {"option": "25", "answer":"false"}
            ]
