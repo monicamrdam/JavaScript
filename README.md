@@ -7,4 +7,4 @@
 - JavaScript Essentials 2 (JSE2): INTERMEDIATE, consisting of four modules.
 
 ### Scheme 
-![Scheme](https://edube.org/learn/netacad-resources-javascript-essentials-1-0-eng/javascript-essentials-about-the-curriculum)
+[Scheme](https://pages.github.com/](https://edube.org/learn/netacad-resources-javascript-essentials-1-0-eng/javascript-essentials-about-the-curriculum)
