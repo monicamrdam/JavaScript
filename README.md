@@ -10,6 +10,7 @@
   4. Module 4: control flow - condicional execution and loops.
   5. Module 5: functions.
   6. Module 6: errors, exceptions, debugging, and troubleshooting.
+ 
 - JavaScript Essentials 2 (JSE2): INTERMEDIATE, consisting of four modules.
 
 
