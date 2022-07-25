@@ -2,11 +2,11 @@
     "questions":[
        { 
            "__comment": "1",
-            "question": "Analyze the following code: try{console.log('start');}catch(error){console.log('error');}{finally {console.log('end')}}. What will happen as a result of its execution? ",
+            "question": "Analyze the following code: try{ocnsole.log('start');}catch(error){console.log('error');}{finally {console.log('end')}}. What will happen as a result of its execution? ",
            "answers":[
              {"option": "The words 'start', 'error', 'end' will appear in the console on successive lines.", "answer":"false"},
-             {"option": "The following words will appear in the console: 'start', 'end'.", "answer":"true"},
-             {"option": "The following words will appear in the console: 'error', 'end'.", "answer":"false"},
+             {"option": "The following words will appear in the console: 'start', 'end'.", "answer":"false"},
+             {"option": "The following words will appear in the console: 'error', 'end'.", "answer":"true"},
              {"option": "The word 'error' will appear in the console.", "answer":"false"}
            ]
         },
@@ -66,7 +66,7 @@
            "answers":[
              {"option": "ReferenceError", "answer":"false"},
              {"option": "SyntaxError", "answer":"true"},
-             {"option": "RangeError", "answer":"falsefalse"},
+             {"option": "RangeError", "answer":"false"},
              {"option": "TypeError", "answer":"false"}
            ]
         },
