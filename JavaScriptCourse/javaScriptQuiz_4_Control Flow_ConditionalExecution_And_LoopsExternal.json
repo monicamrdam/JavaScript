@@ -24,10 +24,10 @@
            "__comment": "3",
            "question": "The switch statement:",
            "answers":[
-             {"option": "Is a conditional statement that works identically to the if statement ;", "answer":"true"},
+             {"option": "Is a conditional statement that works identically to the if statement ;", "answer":"false"},
              {"option": "Allows you to change the progam mode to debug mode;", "answer":"false"}, 
              {"option": "Is not present in the JavaScript Language", "answer":"false"},
-             {"option": "Is a conditional statement that allows different actions to be taken depending on the value stored in the indicated variable.", "answer":"false"}
+             {"option": "Is a conditional statement that allows different actions to be taken depending on the value stored in the indicated variable.", "answer":"true"}
            ]
         },
         { 
@@ -47,7 +47,7 @@
              {"option": "'car'.", "answer":""},
              {"option": "'make: Citroen' 'model: DS'.", "answer":"false"},
              {"option": "'Citroen' 'DS'.", "answer":"false"},
-             {"option": "'make' 'model'.", "answer":""}
+             {"option": "'make' 'model'.", "answer":"true"}
            ]
         },
         { 
@@ -84,10 +84,10 @@
            "__comment": "9",
            "question": "If we want to display all the elements of the days arrays in reverse order (starting from the last element) then we can do this using the statement: ",
            "answers":[
-             {"option": "for(let i = days.length; i > 0;i--)console.log(i);", "answer":""},
-             {"option": "for(let i = days.length; i > 0;i--)console.log(days[i]);", "answer":""},
+             {"option": "for(let i = days.length; i > 0;i--)console.log(i);", "answer":"false"},
+             {"option": "for(let i = days.length; i > 0;i--)console.log(days[i]);", "answer":"false"},
              {"option": "for(let i = days.length -1; i > 0;i--)console.log(days[i]);", "answer":"false"},
-             {"option": "for(let i = days.length - 1; i >= 0;i--)console.log(days[i]);", "answer":""}
+             {"option": "for(let i = days.length - 1; i >= 0;i--)console.log(days[i]);", "answer":"true"}
            ]
         },
         { 
@@ -95,7 +95,7 @@
            "question": "Whitch of the following loop instructions is intended only to loop throught all the keys of the indicated object?.:" ,
            "answers":[
              {"option": "for...of", "answer":"false"},
-             {"option": "do...while", "answer":""},
+             {"option": "do...while", "answer":"true"},
              {"option": "if...else", "answer":""},
              {"option": "for...in", "answer":"false"}
            ]
@@ -124,10 +124,10 @@
            "__comment": "13",
             "question": "The condition if (a >=0) can be replaced by the condition: ",
            "answers":[
-             {"option": "if(!(a>0 && a==0));", "answer":""},
+             {"option": "if(!(a>0 && a==0));", "answer":"false"},
              {"option": "if (a>0 || a==0);", "answer":"true"},
-             {"option": "if(0<a);", "answer":""},
-             {"option": "if (a>0 && a==0);", "answer":""}
+             {"option": "if(0<a);", "answer":"false"},
+             {"option": "if (a>0 && a==0);", "answer":"false"}
            ]
         },
         { 
@@ -135,9 +135,9 @@
            "question": "Which of the following is not a loop instruction in JavaScript?:",
            "answers":[
              {"option": "for...of", "answer":"false"},
-             {"option": "if...else", "answer":"true"},
+             {"option": "if...else", "answer":"false"},
              {"option": "do...while", "answer":"false"},
-             {"option": "for...in" , "answer":"false"}
+             {"option": "for...in" , "answer":"true"}
            ]
         },
         { 
@@ -184,20 +184,20 @@
            "__comment": "19",
            "question": "Review the following code snippet: if (counter <=10 && confirm === false) {console.log('test')}. What values can teh counter and confirm variables have so that the console displays 'test' as a result of code execution?:",
            "answers":[
-             {"option": "counter:9, show:true", "answer":""},
-             {"option": "counter:11, show:false", "answer":""},
+             {"option": "counter:9, show:true", "answer":"false"},
+             {"option": "counter:11, show:false", "answer":"false"},
              {"option": "counter:10, show:false", "answer":"true"},
-             {"option": "counter:10, show:true" , "answer":""}
+             {"option": "counter:10, show:true" , "answer":"false"}
            ]
         },
         { 
            "__comment": "20",
            "question": "Which sequence of if ...else  statements is incorrect?:",
            "answers":[
-             {"option": "if...else if...else if... ", "answer":""},
+             {"option": "if...else if...else if... ", "answer":"false"},
              {"option": "if...else...else if...", "answer":"true"},
-             {"option": "if... else if...", "answer":""},
-             {"option": "if...else..." , "answer":""}
+             {"option": "if... else if...", "answer":"false"},
+             {"option": "if...else..." , "answer":"false"}
            ]
         },
     ]
