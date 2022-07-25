@@ -95,7 +95,7 @@
            "question": "We define a function using the following function expression: let sum = function (a,b) {return (a + b);}. What could the definition of the corresponding arrow function look like?" ,
            "answers":[
              {"option": "let sum = function (a , b) => {return(a + b);};", "answer":"false"},
-             {"option": "let sum = (a , b) => a + b;", "answer":""},
+             {"option": "let sum = (a , b) => a + b;", "answer":"true"},
              {"option": "let sum = (a , b) => {a + b;};", "answer":"false"},
              {"option": "let sum = (a , b) > a + b;", "answer":""}
            ]
@@ -107,7 +107,7 @@
              {"option": "ret;", "answer":"false"},
              {"option": "yield;", "answer":"false"},
              {"option": "return;", "answer":"true"},
-             {"option": "function;", "answer":"true"}
+             {"option": "function;", "answer":"false"}
            ]
         }
         
