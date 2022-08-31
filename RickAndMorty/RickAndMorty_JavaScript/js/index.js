@@ -50,7 +50,7 @@ fetch('https://rickandmortyapi.com/api/character/')
           divText.style.marginLeft= 'auto';
           divText.style.marginRight= 'auto';
 
-          
+          pNombre.style.fontWeight ="bold";
 
           img.src = character.image;
           img.style.maxWidth = "200px"; 
@@ -70,7 +70,7 @@ fetch('https://rickandmortyapi.com/api/character/')
          
           append(div, divImagen);
           append(divImagen, img);
-           append(div, divText);
+          append(div, divText);
           append(div, divSpace);
           
           
@@ -78,6 +78,8 @@ fetch('https://rickandmortyapi.com/api/character/')
       })
   })
   .catch(error => console.error('Error:', error));
+
+
 
 
 
