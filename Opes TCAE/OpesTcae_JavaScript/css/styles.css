@@ -1,0 +1,353 @@
+/* Importamos una fuente de texto*/
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+		*{/*De todos los elementos del html se pone el margen y el padding a 0 */
+			margin: 0;
+			padding: 0;
+			font-family: 'Montserrat', sans-serif;/*Incorporamos la fuente a toda la página*/
+		}
+
+		header{
+			height: 40px;
+			background-color: black;
+			text-align: center;
+			color: #3B6A0F;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border: 4px solid while;
+			box-shadow: 0px 2px 5px 0px black;
+		}
+
+		footer{
+			height: 20vh;
+			background-color: black;
+			margin-top: 5px;
+		}
+
+		.logo{/*Centrar el título*/
+			margin: auto;
+			font-size: 12px;
+			font-weight: bold;
+		}
+	
+		/*Barra a la derecha*/
+		.top_navbar, .check, .show_menu, .hidden_menu{/*La barra lateral no se ve en movil */
+			display: none;
+		}
+
+		/*Barra Inferior	*/	
+		.bottom__navbar{
+			position: fixed;
+			bottom: 0;/*Se posicione en la parte inferior de la pantalla*/
+			width: 100vw;
+			height: 70px;
+			background-color: black;
+			text-decoration: none;
+		}
+
+		.bottom_navbar_container{/*El contenedor de los items, llevará el flex*/
+			list-style: none;
+			display: flex;
+			flex-direction: row; /*Dirección de los items*/
+			align-items: center ;
+			justify-content: space-around; /*espacio entre los items*/
+			height: 70%;
+		}
+
+		.bottom_navbar_item { /*Items*/
+			width: 100vw;
+		}
+
+		.bottom_navbar_link{/*Toman la misma forma los iconos*/
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 70px; /*Es el mismo height que el que ponemos al bottom__navbar*/
+				text-decoration: none;
+				color: green;
+				filter: grayscale(80%) opacity(0.7);/*Change all images to black and white (100% gray): */
+				transition: 0.5s all ease; /*se aplica a todas las propiedades CSS del elemento*/
+		}
+
+		.bottom_navbar_link:hover{
+			filter: grayscale(0%) opacity(1);
+		}
+
+		.svg_icon{
+			color: #3B6A0F;
+			height: 30px;/*Pone todos los svg al mismo tamaño*/
+			transition: 0.6s all ease; /*se aplica al cambiar el color*/
+		}
+
+
+		/*Banner debajo del header*/
+		.banner-nav{
+			margin-top: 3px;
+			background-color: black;
+		  overflow: hidden; /*hidden; hace que el texto que sobresalga por encima del div no sea visible. */
+		  display: flex;
+		  justify-content: space-around;
+		 	text-align: center;
+		 	/*Sombra inferior */
+		 	border: 4px solid while;
+			box-shadow: 0px 2px 5px 0px black;
+
+		}
+
+		.banner-nav__btn {
+		    color: #3B6A0F;
+		    text-decoration: none;
+		    font-size: 10px;
+		    padding: 0px 10px 0px 10px;
+		    border-left: 18px solid #3B6A0F;
+		}
+
+		.banner-nav__btn a{
+			  display: block;
+				padding: 20px;
+				color: #3B6A0F;
+				font-size: 80px;
+				text-decoration: none; /*Quitamos el subrayado y el azul de los enlaces*/
+				padding: 0 10px;/*10px a la izquierda*/
+				transition: 04s;
+		}
+
+		/*Titulo*/
+		.title{
+				margin-top: 3px;
+				font-size: 8px;
+				text-align: center;
+				background-color: black;
+				color: white;
+				border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+		}
+
+		/*Mapa y provincias */
+		.section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3px 3px 3px 3px;
+      }
+
+		 .image_map {
+        box-shadow: 0px 2px 5px 0px black;
+        border: 4px solid while;
+        width: 100vw;
+
+      }
+
+      .provincias{
+      	color: #3B6A0F;
+        overflow: hidden; /*hidden; hace que el texto que sobresalga por encima del div no sea visible. */
+        box-shadow: 0px 2px 5px 0px white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Los elementos flex son colocados en varias líneas. */
+        justify-content: center; /*Se coloca al principio el margen izquierdo */
+
+      }
+
+      .provincias a{
+      	color: #3B6A0F;
+      }
+
+
+      /* Conjunto con el nombre de las provincias */
+      .sidepanel_inferior{
+        background-color: black;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+        width: 100vw; /*Ocupar el ancho visible */
+        border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+      }
+
+      .sidepanel_inferior a{
+      	text-decoration: none;
+      }
+
+
+		/*MEDIA QUERY PARA DISPOSITIVOS GRANDES de más de 768px*/
+		@media only screen and (min-width: 768px){
+			.bottom__navbar{
+				display: none; /*Ocultamos la barra de navegación inferior*/
+			}
+			.top_navbar, .check, .show_menu, .hidden_menu{ /*Mostramos la barra lateral en la versión html*/
+				display: initial;
+			}
+
+			header{
+				height: 150px;
+			}
+
+			footer{
+					height: 5vh;
+					background-color: black;
+					margin-top: 5px;
+			}
+
+			.logo{
+				font-size: 55px;
+			}
+
+			.barner_nav{
+				margin: 10px;
+				border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+			}
+
+			.banner-nav__btn{
+				font-size: 30px;
+			}
+
+			.title{
+					margin-top: 10px;
+					font-size: 30px;
+					text-align: center;
+					background-color: black;
+					color: white;
+					border: 4px solid while;
+					box-shadow: 0px 2px 5px 0px black;
+			}
+
+			.sidepanel_inferior{
+        font-size: 40px;
+      }
+
+			#check{/*Evitamos que se vea el check*/
+				display: none;
+			}
+
+			.show_menu, .hidden_menu{
+				display: block;
+			}
+
+			/*Lo que ocupará cuando lo despleguemos el menú*/
+			.top_navbar{
+			 	position: fixed;
+			 	width: 100%;
+			 	height: 100vh;/*Se adapta a todo el alto posible*/
+			 	background: black;
+			 	right: -100%;/*Si ponemos 100 sale el menú de izq a derecha si ponemos -100 sale de derecha a izquierda*/
+			 	top: 0;
+			 	text-align: center;
+			 	padding: 100px 0px;
+			 	z-index: 100;
+			 	transition: 0.8s;
+			}
+			
+			.top_navbar a{/*Modificar el style de las provincias */
+				margin: 20px;
+				display: block;
+				padding: 20px;
+				color: #3B6A0F;
+				font-weight: 400;
+				font-size: 80px;
+				text-decoration: none; /*Quitamos el subrayado y el azul de los enlaces*/
+				padding: 0 10px;/*10px a la izquierda*/
+				transition: 04s;
+			}
+
+			.hidden_menu{ /*Desplazar la x a la zona superior derecha*/
+				position: absolute;
+				top: 40px;
+				right: 40px;
+			}
+
+			.show_menu, .hidden_menu{
+				font-size: 80px;
+				cursor: pointer; /*Que se muestre una mano del cursos */
+			}
+			
+			.show_menu{
+				order: 1; /*Set the order of the flexible items*/
+			}
+			.top_navbar a:hover,.show_menu:hover, .hidden_menu:hover,.banner-nav__btn:hover{
+				color: green;
+				filter: grayscale(80%) opacity(0.7);/*Change all images to black and white (100% gray): */
+				transition: 0.5s all ease; /*se aplica a todas las propiedades CSS del elemento*/
+			}
+
+			/*HACE QUE EL MENÚ SE OCULTE O SE MUESTRE CUANDO SE SELECCIONA*/
+			#check:checked ~ .top_navbar{/*Cuando el check este chekeado y todos los elementos que preceden a este check se ocultan */
+				right: 0;
+			}
+			
+		}/*FIN DEL @MEDIA*/
+
+
+
+		/*MEDIA QUERY PARA DISPOSITIVOS GRANDES de más de 992 px*/
+		@media only screen and (min-width: 992px){
+			.bottom__navbar{
+				display: none; /*Ocultamos la barra de navegación inferior*/
+			}
+			.top_navbar, .check, .show_menu, .hidden_menu{ /*Mostramos la barra lateral en la versión html*/
+				display: initial;
+			}
+			header{
+				height: 200px;
+			}
+			footer{
+					height: 5vh;
+					background-color: black;
+					margin-top: 5px;
+			}
+			.logo{
+				font-size: 55px;
+			}
+			.barner_nav{
+				margin: 10px;
+				border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+			}
+
+			.banner-nav__btn{
+				font-size: 40px;
+			}
+			.title, .sidepanel_inferior{
+				border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+			}
+		}/*FIN DEL @MEDIA*/
+
+
+		/*MEDIA QUERY PARA DISPOSITIVOS GRANDES de más de 1200 px*/
+		@media only screen and (min-width: 1200px){
+			.bottom__navbar{
+				display: none; /*Ocultamos la barra de navegación inferior*/
+			}
+			.top_navbar, .check, .show_menu, .hidden_menu{ /*Mostramos la barra lateral en la versión html*/
+				display: initial;
+			}
+			header{
+				height: 200px;
+			}
+			footer{
+					height: 5vh;
+					background-color: black;
+					margin-top: 5px;
+			}
+			.logo{
+				font-size: 80px;
+			}
+			.barner_nav{
+				margin: 10px;
+				border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+			}
+
+			.banner-nav__btn{
+				font-size: 40px;
+			}
+			.title, .sidepanel_inferior{
+				border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+			}
+			
+		}/*FIN DEL @MEDIA*/

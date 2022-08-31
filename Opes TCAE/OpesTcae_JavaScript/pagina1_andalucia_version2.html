@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OPEs Técnico en cuidados auxiliares de enfermería</title>
+	<style type="text/css">
+		/* Importamos una fuente de texto*/
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+		*{/*De todos los elementos del html se pone el margen y el padding a 0 */
+			margin: 0;
+			padding: 0;
+			font-family: 'Montserrat', sans-serif;/*Incorporamos la fuente a toda la página*/
+		}
+		header{
+			height: 40px;
+			background-color: black;
+			text-align: center;
+			color: #3B6A0F;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border: 4px solid while;
+			box-shadow: 0px 2px 5px 0px black;
+
+		}
+		footer{
+			height: 20vh;
+			background-color: black;
+			margin-top: 5px;
+		}
+
+
+		.logo{/*Centrar el título*/
+			margin: auto;
+			font-size: 12px;
+			font-weight: bold;
+		}
+
+		/*Barra a la derecha*/
+		.top_navbar, .check, .show_menu, .hidden_menu{/*La barra lateral no se ve en movil */
+			display: none;
+		}
+
+		/*Barra Inferior	*/
+		.bottom__navbar{
+			position: fixed;
+			bottom: 0;/*Se posicione en la parte inferior de la pantalla*/
+			width: 100vw;
+			height: 70px;
+			background-color: black;
+			text-decoration: none;
+		}
+
+		.bottom_navbar_container{/*El contenedor de los items, llevará el flex*/
+			list-style: none;
+			display: flex;
+			flex-direction: row; /*Dirección de los items*/
+			align-items: center ;
+			justify-content: space-around; /*espacio entre los items*/
+			height: 70%;
+		}
+
+		.bottom_navbar_item { /*Items*/
+			width: 100%;
+		}
+
+		.bottom_navbar_link{/*Toman la misma forma los iconos*/
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 70px; /*Es el mismo height que el que ponemos al bottom__navbar*/
+				text-decoration: none;
+				color: green;
+				filter: grayscale(80%) opacity(0.7);/*Change all images to black and white (100% gray): */
+				transition: 0.5s all ease; /*se aplica a todas las propiedades CSS del elemento*/
+		}
+
+		.bottom_navbar_link:hover{
+			filter: grayscale(0%) opacity(1);
+		}
+
+		.svg_icon{
+			color: #3B6A0F;
+			height: 30px;/*Pone todos los svg al mismo tamaño*/
+			transition: 0.6s all ease; /*se aplica al cambiar el color*/
+		}
+
+		/*Banner debajo del header*/
+		.banner-nav{
+			margin-top: 3px;
+			background-color: black;
+		  overflow: hidden; /*hidden; hace que el texto que sobresalga por encima del div no sea visible. */
+		  display: flex;
+		  justify-content: space-around;
+		 	text-align: center;
+		 		/*Sombra inferior */
+		 	border: 4px solid while;
+			box-shadow: 0px 2px 5px 0px black;
+		}
+
+		.banner-nav__btn {
+		    color: #3B6A0F;
+		    text-decoration: none;
+		    font-size: 10px;
+		    padding: 0px 10px 0px 10px;
+		    border-left: 18px solid #3B6A0F;
+		}
+
+		.banner-nav__btn a{
+			  display: block;
+				padding: 20px;
+				color: #3B6A0F;
+				font-size: 80px;
+				text-decoration: none; /*Quitamos el subrayado y el azul de los enlaces*/
+				padding: 0 10px;/*10px a la izquierda*/
+				transition: 04s;
+		}
+
+		/*Titulo*/
+		.title{
+			margin-top: 3px;
+			font-size: 8px;
+			text-align: center;
+			background-color: black;
+			color: white;
+			border: 4px solid while;
+			box-shadow: 0px 2px 5px 0px black;
+		}
+
+		/*Contiene la información de los temas*/
+		.section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3px 3px 3px 3px;
+      }
+
+     article {
+        width: 300px;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin: 10px;
+        text-align: justify;
+        line-height: 25px;
+        font-size: 12px;
+        box-shadow: 2px 5px 5px black;
+        background-color: #f2f3f4;
+        overflow: auto; /* Muestra barra lateral en el cuadro solo cuando hace falta */
+      }
+
+      a{
+      	text-decoration: none;
+      	color: black;
+      }
+
+      /*Para que los elementos impares del li tengan diferente fondo */
+      .section li:nth-child(even) {
+        /*filas pares*/
+        background: #d5d8dc;
+      }
+
+     	.section li:nth-child(odd) {
+        /*filas impares*/
+        background: #f2f3f4;
+      }
+
+
+		/*MEDIA QUERY PARA DISPOSITIVOS GRANDES de más de 768px*/
+		@media only screen and (min-width: 768px){
+			.bottom__navbar{
+				display: none; /*Ocultamos la barra de navegación inferior*/
+			}
+			.top_navbar, .check, .show_menu, .hidden_menu{ /*Mostramos la barra lateral en la versión html*/
+				display: initial;
+			}
+
+			header{
+				height: 150px;
+			}
+
+			footer{
+					height: 5vh;
+					background-color: black;
+					margin-top: 5px;
+			}
+
+			.logo{
+				font-size: 42px;
+			}
+
+			.barner_nav{
+				margin: 10px;
+				border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+			}
+
+			.banner-nav__btn{
+				font-size: 30px;
+			}
+
+			.title{
+					margin-top: 10px;
+					font-size: 30px;
+					text-align: center;
+					background-color: black;
+					color: white;
+					border: 4px solid while;
+					box-shadow: 0px 2px 5px 0px black;
+			}
+
+			.sidepanel_inferior{
+        font-size: 40px;
+      }
+
+			#check{/*Evitamos que se vea el check*/
+				display: none;
+			}
+
+			.show_menu, .hidden_menu{
+				display: block;
+			}
+
+			/*Lo que ocupará cuando lo despleguemos el menú*/
+			.top_navbar{
+			 	position: fixed;
+			 	width: 100%;
+			 	height: 100vh;/*Se adapta a todo el alto posible*/
+			 	background: black;
+			 	right: -100%;/*Si ponemos 100 sale el menú de izq a derecha si ponemos -100 sale de derecha a izquierda*/
+			 	top: 0;
+			 	text-align: center;
+			 	padding: 100px 0px;
+			 	z-index: 100;
+			 	transition: 0.8s;
+			}
+			
+			.top_navbar a{/*Modificar el style de las provincias */
+				margin: 20px;
+				display: block;
+				padding: 20px;
+				color: #3B6A0F;
+				font-weight: 400;
+				font-size: 80px;
+				text-decoration: none; /*Quitamos el subrayado y el azul de los enlaces*/
+				padding: 0 10px;/*10px a la izquierda*/
+				transition: 04s;
+			}
+
+			.hidden_menu{ /*Desplazar la x a la zona superior derecha*/
+				position: absolute;
+				top: 40px;
+				right: 40px;
+			}
+
+			.show_menu, .hidden_menu{
+				font-size: 80px;
+				cursor: pointer; /*Que se muestre una mano del cursos */
+			}
+
+			.show_menu{
+				order: 1; /*Set the order of the flexible items*/
+			}
+			.top_navbar a:hover,.show_menu:hover, .hidden_menu:hover,.banner-nav__btn:hover{
+				color: green;
+				filter: grayscale(80%) opacity(0.7);/*Change all images to black and white (100% gray): */
+				transition: 0.5s all ease; /*se aplica a todas las propiedades CSS del elemento*/
+			}
+
+			/*HACE QUE EL MENÚ SE OCULTE O SE MUESTRE CUANDO SE SELECCIONA*/
+			#check:checked ~ .top_navbar{/*Cuando el check este chekeado y todos los elementos que preceden a este check se ocultan */
+				right: 0;
+			}
+			
+			article{/*NUEVO EN ESTE HTML */
+				width: 95vw;
+				font-size: 20px;
+				line-height: 25px;
+			}
+
+		}/*FIN DEL @MEDIA*/
+
+
+		/*MEDIA QUERY PARA DISPOSITIVOS GRANDES de más de 992 px*/
+		@media only screen and (min-width: 992px){
+			.bottom__navbar{
+				display: none; /*Ocultamos la barra de navegación inferior*/
+			}
+			.top_navbar, .check, .show_menu, .hidden_menu{ /*Mostramos la barra lateral en la versión html*/
+				display: initial;
+			}
+			header{
+				height: 200px;
+			}
+			footer{
+					height: 5vh;
+					background-color: black;
+					margin-top: 5px;
+			}
+			.logo{
+				font-size: 55px;
+			}
+			.barner_nav{
+				margin: 10px;
+				border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+			}
+
+			.banner-nav__btn{
+				font-size: 40px;
+			}
+			.title, .sidepanel_inferior{
+				border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+			}
+			article{/*NUEVO EN ESTE HTML */
+				width: 95vw;
+				font-size: 25px;
+				line-height: 50px;
+			}
+		}/*FIN DEL @MEDIA*/
+
+
+		/*MEDIA QUERY PARA DISPOSITIVOS GRANDES de más de 1200 px*/
+		@media only screen and (min-width: 1200px){
+			.bottom__navbar{
+				display: none; /*Ocultamos la barra de navegación inferior*/
+			}
+			.top_navbar, .check, .show_menu, .hidden_menu{ /*Mostramos la barra lateral en la versión html*/
+				display: initial;
+			}
+			header{
+				height: 200px;
+			}
+			footer{
+					height: 5vh;
+					background-color: black;
+					margin-top: 5px;
+			}
+			.logo{
+				font-size: 80px;
+			}
+			.barner_nav{
+				margin: 10px;
+				border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+			}
+
+			.banner-nav__btn{
+				font-size: 40px;
+			}
+			.title, .sidepanel_inferior{
+				border: 4px solid while;
+				box-shadow: 0px 2px 5px 0px black;
+			}
+			article{/*NUEVO EN ESTE HTML */
+				width: 95vw;
+				font-size: 50px;
+				line-height: 70px;
+			}
+			
+		}/*FIN DEL @MEDIA*/
+
+	</style>
+</head>
+<body>
+	<!--HEADER -->
+	<header>
+		<h1 class="logo">OPOSICIONES COMUNIDAD AUTÓNOMA DE ANDALUCIA 2020-2021 </h1>
+
+		<input class="check" type="checkbox" id="check">
+		<label for="check" class="show_menu">
+			&#8801
+		</label>
+
+		<nav class="top_navbar">
+			<a href="index.html">Home</a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<label for="check" class="hidden_menu">
+				&#215
+			</label>
+		</nav>
+
+	</header>
+	<nav class="bottom__navbar">
+		<ul class="bottom_navbar_container">
+			<!--li with class navbar_item  -->
+			<li class="navbar_item" class="bottom_navbar_item">
+				<!--Enlace modificar en cada página -->
+				<a href="index.html" class="bottom_navbar_link">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="laptop-house" class="svg_icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M272,288H208a16,16,0,0,1-16-16V208a16,16,0,0,1,16-16h64a16,16,0,0,1,16,16v37.12C299.11,232.24,315,224,332.8,224H469.74l6.65-7.53A16.51,16.51,0,0,0,480,207a16.31,16.31,0,0,0-4.75-10.61L416,144V48a16,16,0,0,0-16-16H368a16,16,0,0,0-16,16V87.3L263.5,8.92C258,4,247.45,0,240.05,0s-17.93,4-23.47,8.92L4.78,196.42A16.15,16.15,0,0,0,0,207a16.4,16.4,0,0,0,3.55,9.39L22.34,237.7A16.22,16.22,0,0,0,33,242.48,16.51,16.51,0,0,0,42.34,239L64,219.88V384a32,32,0,0,0,32,32H272ZM629.33,448H592V288c0-17.67-12.89-32-28.8-32H332.8c-15.91,0-28.8,14.33-28.8,32V448H266.67A10.67,10.67,0,0,0,256,458.67v10.66A42.82,42.82,0,0,0,298.6,512H597.4A42.82,42.82,0,0,0,640,469.33V458.67A10.67,10.67,0,0,0,629.33,448ZM544,448H352V304H544Z"></path></svg>
+				</a>
+			</li>
+			<li class="navbar_item" class="bottom_navbar_item">
+				<a href="index.html" class="bottom_navbar_link">
+					<!--Enlace modificar en cada página -->
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-alt-circle-left" class="svg_icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm116-292H256v-70.9c0-10.7-13-16.1-20.5-8.5L121.2 247.5c-4.7 4.7-4.7 12.2 0 16.9l114.3 114.9c7.6 7.6 20.5 2.2 20.5-8.5V300h116c6.6 0 12-5.4 12-12v-64c0-6.6-5.4-12-12-12z"></path></svg>
+				</a>
+			</li>
+			<li class="navbar_item" class="bottom_navbar_item">
+				<!--Enlace modificar en cada página -->
+				<a href="pagina1_castillalamancha_v2.html" class="bottom_navbar_link">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-alt-circle-right" class="svg_icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z"></path></svg>
+				</a>
+			</li>
+			<li class="navbar_item" class="bottom_navbar_item">
+				<a href="#" class="bottom_navbar_link">
+					<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-alt" class="svg_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!--MAIN -->
+	<main>
+		
+		<section class="banner-nav">
+          <a class="banner-nav__btn" href="https://www.juntadeandalucia.es/boja/2019/111/BOJA19-111-00023-8874-01_00157199.pdf"
+          target="_black">CONVOCATORIA - BOE</a>
+          <a class="banner-nav__btn" href="pagina2_and_v2_examenIframe.html" target="_black">EXÁMENES</a>
+		</section>
+
+		<section class="title">
+			<h2>
+        TEMARIO COMúN
+      </h2>
+		</section>
+
+   <!--Section and Article -->
+    <div class="section">
+          <section>
+          	<!--temas 1 al 9 -->
+              <article>
+               	<ul>
+                  <a href="#">
+                      <h3>Tema 1</h3>
+                   </a>
+                  <li>
+                    La Constitución Española de 1978: valores superiores y principios inspiradores.
+                  </li>
+                  <li>
+                    Derechos y deberes fundamentales.
+                  </li>
+                  <li>
+                    El Derecho a la protección de la salud.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 2</h3>
+                <ul>
+                  <li>
+                    El Estatuto de Autonomía para Andalucía: valores superiores y objetivos básicos.
+                  </li>
+                  <li>
+                    Derechos sociales, deberes y políticas públicas.
+                  </li>
+                  <li>
+                    Competencias en materia de salud. Organización institucional de la Comunidad Autónoma. Elaboración de las normas.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 3</h3>
+                <ul>
+                  <li>
+                    Organización sanitaria (I). 
+                  </li>
+                  <li>
+                    Ley 14/1986, de 25 de abril, General de Sanidad: Principios Generales. Competencias de las Administraciones Públicas. Organización General del Sistema Sanitario Público.
+                  </li>
+                  <li>
+                    Ley 2/1998, de 15 de junio, de Salud de Andalucía: Objeto, principios y alcance. Derechos y deberes de los ciudadanos respecto de los servicios sanitarios en Andalucía. Efectividad de los derechos y deberes. Plan Andaluz de Salud: compromisos.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 4</h3>
+                <ul>
+                  <li>
+                    Organización sanitaria (II).
+                  </li>
+                  <li>
+                    Estructura, organización y competencias de la Consejería de Igualdad, Salud y Políticas Sociales y del Servicio Andaluz de Salud. 
+                  </li>
+                  <li>
+                    Asistencia Sanitaria en Andalucía: La estructura, organización y funcionamiento de los servicios de atención primaria en Andalucía. 
+                  </li>
+                  <li>Ordenación de la Asistencia Especializada en Andalucía. Organización de la Atención Primaria. Organización Hospitalaria. </li>
+                  <li>Áreas de Gestión Sanitarias. Continuidad asistencial entre niveles asistenciales.</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 5</h3>
+                <ul>
+                  <li>
+                    Protección de datos. 
+                  </li>
+                  <li>
+                    Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal: Objeto, ámbito de aplicación y principios. Derechos de las personas. 
+                  </li>
+                  <li>
+                    La Agencia Española de Protección de Datos.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 6</h3>
+                <ul>
+                  <li>
+                    Prevención de riesgos laborales. 
+                  </li>
+                  <li>
+                   La Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales: Derechos y obligaciones. Consulta y participación de los trabajadores. 
+                  </li>
+                  <li>
+                    Organización de la prevención de riesgos laborales en el Servicio Andaluz de Salud: las Unidades de Prevención en los Centros Asistenciales del Servicio Andaluz de Salud. 
+                  </li>
+                  <li>Manejo de sustancias biológicas. Higiene de manos. La postura. Las pantallas de visualización de datos. El pinchazo accidental. </li>
+                  <li>
+                    Agresiones a profesionales. Control de situaciones conflictivas.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 7</h3>
+                <ul>
+                  <li>
+                    Ley 12/2007, de 26 de noviembre, de Promoción de la Igualdad de Género en Andalucía: Objeto. Ámbito de aplicación. Principios generales. Políticas públicas para la promoción de la igualdad de género. 
+                  </li>
+                  <li>
+                    Ley 13/2007, de 26 de noviembre, de Prevención y Protección Integral Contra la Violencia de Género: Objeto. Ámbito de aplicación. Principios rectores. Formación a profesionales de la salud.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 8</h3>
+                <ul>
+                  <li>
+                   Régimen Jurídico del Personal. Régimen de Incompatibilidades del Personal al servicio de las Administraciones Públicas.
+                  </li>
+                  <li>
+                    Ley 55/2003, de 16 de diciembre, Estatuto Marco del Personal Estatutario de los Servicios de Salud: Clasificación del personal estatutario. Derechos y deberes. Adquisición y pérdida de la condición de personal estatutario fijo. Provisión de plazas, selección y promoción interna. Movilidad del personal. Carrera Profesional. Retribuciones. Jornadas de trabajo, permisos y licencias. Situaciones del personal estatutario. Régimen disciplinario. Derechos de representación, participación y negociación colectiva.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 9</h3>
+                <ul>
+                  <li>
+                   Autonomía del paciente y derechos y obligaciones en materia de información y documentación clínica. 
+                  </li>
+                  <li>
+                   Ley 41/2002, de 14 de noviembre, Básica Reguladora de la Autonomía del Paciente y de Derechos y Obligaciones en materia de Información y Documentación Clínica: El derecho de información sanitaria; El derecho a la intimidad; El respeto de la autonomía del paciente; La historia clínica. El consentimiento informado. 
+                  </li>
+                  <li>
+                    Tarjeta sanitaria.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+         </div>
+
+
+ 	<section class="title">
+			<h2>
+        TEMARIO ESPECÍFICO
+      </h2>
+	</section>
+
+	<div class="section">
+		<section>
+			 <!--Tema 10 al 15 -->
+              <article>
+                <h3>Tema 10</h3>
+                <ul>
+                  <li>
+                    Biobancos del Sistema Sanitario Público de Andalucía. 
+                  </li>
+                  <li>
+                    Ordenación administrativa y funcional de los servicios de Salud Mental. 
+                  </li>
+                  <li>
+                    Sistemas de Información: Historia Digital de Salud del ciudadano.
+                  </li>
+                  <li>
+                    Base de datos de usuarios (BDU). Confidencialidad.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 11</h3>
+                <ul>
+                  <li>
+                    Trabajo en equipo.
+                  </li>
+                  <li>
+                    Concepto de equipo, equipo multidisciplinar, el proceso de integración, consenso, motivación-incentivación y aprendizaje. 
+                  </li>
+                  <li>
+                    Comunicación: Concepto y tipos de comunicación. Habilidades para le comunicación. La empatía y la escucha activa. Control del estrés.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 12</h3>
+                <ul>
+                  <li>
+                    Prevención de riesgos laborales específicos de la categoría. 
+                  </li>
+                  <li>
+                    Especial referencia a la manipulación manual de cargas y al riesgo biológico.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 13</h3>
+                <ul>
+                  <li>
+                   Principios fundamentales de la Bioética: Dilemas éticos. 
+                  </li>
+                  <li>
+                    Normas legales de ámbito profesional. El secreto profesional: Concepto y regulación jurídica.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 14</h3>
+                <ul>
+                  <li>
+                    Infecciones Nosocomiales: definición, cadena epidemiológica, barreras higiénicas. 
+                  </li>
+                  <li>
+                    Tipos y Medidas de aislamiento. 
+                  </li>
+                  <li>
+                    Importancia del lavado de manos.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 15</h3>
+                <ul>
+                  <li>
+                    Gestión de residuos sanitarios: Definición, clasificación, transporte, eliminación y tratamiento.
+                  </li>
+                  <li>
+                    Manipulación de Citostasticos.                  
+                  </li>
+                </ul>
+              </article>
+              <!--Temas del 16 al 20 -->
+              <article>
+                <h3>Tema 16</h3>
+                <ul>
+                  <li>
+                    Conceptos generales de higiene hospitalaria. 
+                  </li>
+                  <li>
+                    Antisépticos/desinfectantes.
+                  </li>
+                  <li>
+                    Esterilización. Métodos de esterilización según tipo de material. 
+                  </li>
+                  <li>
+                    Tipos de controles. Manipulación y conservación del material estéril.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 17</h3>
+                <ul>
+                  <li>
+                    Muestras biológicas: Concepto de muestra, diferentes tipos de muestras biológicas. 
+                  </li>
+                  <li>
+                    Procedimientos de toma de muestras, manipulación, transporte y conservación. Fase Preanalítica y Recogida de Muestras.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 18</h3>
+                <ul>
+                  <li>
+                    Atención y cuidados del paciente en las necesidades de Higiene.
+                  </li>
+                  <li>
+                    Concepto, higiene general y parcial, higiene del paciente encamado y situaciones especiales.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 19</h3>
+                <ul>
+                  <li>
+                    Atención y cuidados del paciente en las necesidades de Eliminación. 
+                  </li>
+                  <li>
+                    Diuresis y defecación: factores que afectan a la defecación, tipos de enemas, administración de enemas. 
+                  </li>
+                  <li>
+                    Conocimiento y actividades de colaboración para la realización de los sondajes del aparato urinario, digestivo y rectal.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 20</h3>
+                <ul>
+                  <li>
+                    Atención y cuidados del paciente en las necesidades de Alimentación.
+                  </li>
+                  <li>
+                    Clasificación de alimentos, dietas, vías de alimentación. 
+                  </li>
+                  <li>
+                    Manipulación y administración de alimentos (nutrición enteral...).
+                  </li>
+                </ul>
+              </article>
+              <!--Temas del 21 al 25 -->
+              <article>
+                <h3>Tema 21</h3>
+                <ul>
+                  <li>
+                    Atención y cuidados del paciente en las necesidades de Movilización. 
+                  </li>
+                  <li>
+                   Movilidad e inmovilidad física, factores que afectan la movilidad. Técnicas de ayuda a la deambulación. Movilizaciones del sistema músculo esquelético. 
+                  </li>
+                  <li>Posiciones corporales.</li>
+                  <li>Procedimientos de traslado del paciente. Riesgo de caídas, medidas preventivas. Uso correcto dispositivos de ayuda.</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 22</h3>
+                <ul>
+                  <li>
+                    Reanimación cardio-pulmonar básica, soporte vital básico. 
+                  </li>
+                  <li>
+                    Concepto de urgencia y prioridad. 
+                  </li>
+                  <li>Carro de parada: reposición y mantenimiento del material.</li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 23</h3>
+                <ul>
+                  <li>
+                    Medicamentos: tipos de medicamentos, vías de administración, precauciones previas, durante y tras la administración
+                  </li>
+                  <li>
+                     Conservación y almacenaje de los medicamentos. 
+                  </li>
+                  <li>
+                    Vacunas.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 24</h3>
+                <ul>
+                  <li>
+                    Atención y cuidados de las Úlceras por presión.
+                  </li>
+                  <li>
+                    Concepto, factores de riesgo. Localización. Etiología. 
+                  </li>
+                  <li>
+                    Medidas de prevención. Movilización y cambios posturales.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 25</h3>
+                <ul>
+                  <li>
+                    Atención y preparación del paciente para una exploración o intervención quirúrgica
+                  </li>
+                  <li>
+                    Posiciones anatómicas.  
+                  </li>
+                  <li>
+                    Atención en las fases: pre-operatorio, intervención y post-opetatorio.
+                  </li>
+                </ul>
+              </article>
+              <!--Temas del 26 al 28 -->
+              <article>
+                <h3>Tema 26</h3>
+                <ul>
+                  <li>
+                    Atención y cuidados al paciente de Salud Mental en los ámbitos hospitalario y comunitario.
+                  </li>
+                  <li>
+                    Concepto de Trastorno Mental Grave, cuidados de necesidades básicas durante la hospitalización y en atención domiciliaria al paciente y familia cuidadora.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 27</h3>
+                <ul>
+                  <li>
+                    Atención y cuidados en el anciano.
+                  </li>
+                  <li>
+                    Concepto de ancianidad, cambios físicos asociados con el envejecimiento. 
+                  </li>
+                  <li>
+                    Apoyo a la promoción de la salud y educación sanitaria. Medidas de apoyo a la persona cuidadora del anciano dependiente. 
+                  </li>
+                  <li>
+                    Atención a la mujer en el embarazo y Planificación Familiar.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h3>Tema 28</h3>
+                <ul>
+                  <li>
+                    Atención y cuidados del paciente en situación terminal/cuidados paliativos y persona cuidadora. 
+                  </li>
+                  <li>
+                    Duelo, tipo y manifestaciones, apoyo al cuidador principal y familia. 
+                  </li>
+                  <li>
+                    Cuidados post-mortem.
+                  </li>
+                </ul>
+              </article>
+
+		</section>
+	</div>
+	</main>
+
+	<!--FOOTER -->
+	<footer>
+		
+	</footer>
+</body>
+</html>
