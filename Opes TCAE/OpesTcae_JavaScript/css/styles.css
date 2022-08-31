@@ -172,6 +172,38 @@
       }
 
 
+      /*Pagina Andalucia*/
+      article {
+        width: 300px;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin: 10px;
+        text-align: justify;
+        line-height: 25px;
+        font-size: 12px;
+        box-shadow: 2px 5px 5px black;
+        background-color: #f2f3f4;
+        overflow: auto; /* Muestra barra lateral en el cuadro solo cuando hace falta */
+      }
+
+      a{
+      	text-decoration: none;
+      	color: black;
+      }
+
+      /*Para que los elementos impares del li tengan diferente fondo */
+      .section li:nth-child(even) {
+        /*filas pares*/
+        background: #d5d8dc;
+      }
+
+     	.section li:nth-child(odd) {
+        /*filas impares*/
+        background: #f2f3f4;
+      }
+
+
+
 		/*MEDIA QUERY PARA DISPOSITIVOS GRANDES de más de 768px*/
 		@media only screen and (min-width: 768px){
 			.bottom__navbar{
@@ -277,6 +309,14 @@
 			#check:checked ~ .top_navbar{/*Cuando el check este chekeado y todos los elementos que preceden a este check se ocultan */
 				right: 0;
 			}
+
+
+			/*Pagina Andalucia*/
+			article{
+				width: 95vw;
+				font-size: 20px;
+				line-height: 25px;
+			}
 			
 		}/*FIN DEL @MEDIA*/
 
@@ -314,6 +354,12 @@
 				border: 4px solid while;
 				box-shadow: 0px 2px 5px 0px black;
 			}
+			/*Pagina Andalucia*/
+			article{
+				width: 95vw;
+				font-size: 25px;
+				line-height: 50px;
+			}
 		}/*FIN DEL @MEDIA*/
 
 
@@ -349,5 +395,11 @@
 				border: 4px solid while;
 				box-shadow: 0px 2px 5px 0px black;
 			}
-			
+
+			/*Pagina Andalucia*/
+			article{
+				width: 95vw;
+				font-size: 50px;
+				line-height: 70px;
+			}
 		}/*FIN DEL @MEDIA*/
