@@ -1,0 +1,39 @@
+		*{/*Que en la esquina superior izquierda no haya ni margen ni padding */
+			margin: 0;
+			padding: 0;
+		}
+		.contenedor{
+  			position: absolute;
+  			background-color: black;
+		}
+		.marcador{
+			text-align: center;
+			background-color: orange;
+			font-weight: 200;
+			color:purple;
+			/*
+			width: 200px;
+			height: 30px;
+			left: 20px;
+			top: 20px;
+			font-size: 1.2rem;
+			*/
+			position: absolute; 
+		}
+		.vida1, .vida2, .vida3{
+			background-color: orange;
+			position: absolute;
+			/*
+			width: 50px;
+			height: 30px;
+			top: 20px;
+			*/
+		}
+		
+		.botonComenzar{
+			position: absolute;
+			background-color: purple;
+			color: white;
+			justify-content: space-between;
+		
+		}
